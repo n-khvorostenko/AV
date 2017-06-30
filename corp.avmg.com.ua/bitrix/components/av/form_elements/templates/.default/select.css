@@ -1,0 +1,76 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear styles --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-styled-select > ul      {margin: 0;padding: 0}
+.av-form-elements-select,
+.av-form-elements-styled-select li:before {display: none !important}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- label ------------------------------ */
+/* -------------------------------------------------------------------- */
+.av-form-elements-styled-select
+	{
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	cursor: pointer;
+	}
+.av-form-elements-styled-select.active,
+.av-form-elements-styled-select:hover,
+.av-form-elements-styled-select:focus,
+.av-form-elements-styled-select:active {border-color: #868B8D}
+
+.av-form-elements-styled-select .title
+	{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 3px 12px 10px;
+	}
+.av-form-elements-styled-select .title > *:nth-child(1)
+	{
+	align-items: center;
+	display: flex;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-styled-select .title > *:nth-child(2)
+	{
+	background: url(images/form_select_arrow.png) center center no-repeat;
+	background-size: cover;
+	transition: .3s;
+	width:  24px;
+	height: 24px;
+	}
+.av-form-elements-styled-select.active .title > *:nth-child(2) {transform: rotate(-180deg)}
+/* -------------------------------------------------------------------- */
+/* -------------------------- drop-down menu -------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-styled-select .list
+	{
+	background: #FAFAFA;
+	border-right:  1px solid #868B8D;
+	border-bottom: 1px solid #868B8D;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius:  2px;
+	display: none;
+	max-height: 200px;
+	margin: -1px 0 0 -1px;
+	position: absolute;
+	z-index: 10;
+	}
+.av-form-elements-styled-select .list li
+	{
+	border-left: 1px solid #868B8D;
+	overflow: hidden;
+	padding: 12px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-styled-select .list li:hover,
+.av-form-elements-styled-select .list li:focus,
+.av-form-elements-styled-select .list li:active,
+.av-form-elements-styled-select .list li.selected
+	{
+	background: #4C5255;
+	border-color: #4C5255;
+	color: #FFF;
+	}

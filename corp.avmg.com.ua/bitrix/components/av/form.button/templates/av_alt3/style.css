@@ -1,0 +1,20 @@
+.av-form-button-alt3,
+.av-form-button-alt3:visited
+	{
+	background: #FFF;
+	border: 1px solid #CC0000;
+	border-radius: 2px;
+	color: #CC0000 !important;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	padding: 7px 10px;
+	margin: 0;
+	transition: .3s;
+	text-align: center;
+	text-decoration: none !important;
+	}
+.av-form-button-alt3:hover,
+.av-form-button-alt3:active,
+.av-form-button-alt3:focus   {box-shadow: 0 2px 4px rgba(76,82,85,0.25);text-decoration: none !important}
+.av-form-button-alt3:active  {background: #CC0000;color: #FFF !important}

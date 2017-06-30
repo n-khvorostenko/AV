@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-course-tree,
+.av-learning-course-tree ul,
+.av-learning-course-tree li
+	{
+	list-style-type: none;
+	padding: 0;
+	margin:  0;
+	}
+.av-learning-course-tree a,
+.av-learning-course-tree a:visited,
+.av-learning-course-tree a:active,
+.av-learning-course-tree a:focus,
+.av-learning-course-tree a:hover {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- tree ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-course-tree > li:not(:last-child)       {margin-bottom: 7px}
+.av-learning-course-tree > li:not(.test-list)        {border: 1px solid #DCE1E4;border-radius: 2px}
+.av-learning-course-tree   li:not(.test-list) a      {display: block;line-height: 26px}
+.av-learning-course-tree .chapter.selected > div,
+.av-learning-course-tree .chapter          > div:hover,
+.av-learning-course-tree .lesson.selected  > a,
+.av-learning-course-tree .lesson           > a:hover,
+.av-learning-course-tree .lesson           > a:active,
+.av-learning-course-tree .lesson           > a:focus {background: #E4E8EB}
+
+.av-learning-course-tree .chapter > div
+	{
+	align-items: center;
+	display: flex !important;
+	}
+.av-learning-course-tree .chapter > div > .title
+	{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: calc(100% - 20px);
+	}
+.av-learning-course-tree .chapter > div > .arrow
+	{
+	background: url(images/arrow.svg) center center no-repeat;
+	background-size: 9px;
+	content: '';
+	cursor: pointer;
+	transition: .3s;
+	width:  16px;
+	height: 16px;
+	}
+.av-learning-course-tree .chapter.open       > div > .arrow {transform: rotate(-180deg)}
+.av-learning-course-tree .chapter            > ul           {width: 100%}
+.av-learning-course-tree .chapter:not(.open) > ul           {display: none}
+
+.av-learning-course-tree > .lesson  > a {padding: 0 5px;width: calc(100% - 10px)}
+.av-learning-course-tree .test-list > a {display: block;font-weight: normal}

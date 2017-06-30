@@ -1,0 +1,21 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-styled-input
+	{
+	border:  none;
+	margin:  0;
+	padding: 0;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ input ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-styled-input
+	{
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	padding: 12px 10px;
+	width: calc(100% - 20px);
+	}
+.av-form-elements-styled-input:not(.alert-input):hover {border-color: #868B8D}
+.av-form-elements-styled-input.alert-input             {border-color: #CC0000}

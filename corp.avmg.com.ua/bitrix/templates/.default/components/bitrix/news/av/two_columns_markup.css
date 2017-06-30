@@ -1,0 +1,11 @@
+.av-news-two-columns-first-col .filter-cell {margin-bottom: 26px}
+
+@media (min-width: 992px)
+	{
+	.av-news-two-columns-first-col  {padding-right: 40px}
+	.av-news-two-columns-second-col {padding-left:  40px}
+	}
+@media (max-width: 991px)
+	{
+	.av-news-two-columns-first-col {padding-bottom: 52px}
+	}

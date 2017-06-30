@@ -1,0 +1,38 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-av_site-input > input
+	{
+	border:  none;
+	margin:  0;
+	padding: 0;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ input ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-av_site-input
+	{
+	align-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	}
+.av-form-elements-av_site-input > label
+	{
+	color: #B6C0C6;
+	height: 26px;
+	position: relative;
+	transition: .3s;
+	}
+.av-form-elements-av_site-input:not(.active) > label        {top: 26px;left: 5px}
+.av-form-elements-av_site-input.active       > label        {top: 5px;left: 0}
+.av-form-elements-av_site-input.alert-input  > label        {color: #CC0000}
+.av-form-elements-av_site-input.required     > label::after {color: #CC0000;content: '*';display: inline-block;margin-left: 3px}
+.av-form-elements-av_site-input              > input        {border-bottom: 1px solid #868B8D;padding-left: 5px;width: 100%}
+.av-form-elements-av_site-input.alert-input  > input        {border-color: #CC0000}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-form-elements-av_site-input > label {font-size: 87.5%}
+	}

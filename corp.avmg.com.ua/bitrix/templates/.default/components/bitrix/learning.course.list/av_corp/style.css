@@ -1,0 +1,127 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+#workarea-content
+	{
+	font-family: "OpenSans-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #444;
+	}
+.av-learning-list-search-form h3,
+.av-learning-list-search-form input[type=text]
+	{
+	background: transparent;
+	border: none;
+	color: inherit;
+	font-weight: normal;
+	margin:  0;
+	padding: 0;
+	}
+.av-learning-list-search-form input[type=text]:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset !important}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- search form --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-list-search-form
+	{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35px;
+	margin-bottom: 25px;
+	}
+.av-learning-list-search-form > h3
+	{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width:  calc(100% - 380px);
+	}
+.av-learning-list-search-form > div              {width:  350px}
+.av-learning-list-search-form input[type=submit] {display: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- list ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-list
+	{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 70%;
+	margin-top: -10px;
+	}
+.av-learning-list > div
+	{
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px 50px 10px;
+	}
+.av-learning-list > div .image
+	{
+	overflow: hidden;
+	width: calc((100% - 10px) * 0.4);
+	}
+.av-learning-list > div .image > img
+	{
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	}
+.av-learning-list > div .content
+	{
+	border: 1px solid #DCE1E4;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: calc((100% - 10px) * 0.6);
+	}
+.av-learning-list > div .title
+	{
+	align-items: center;
+	color: inherit;
+	display: flex;
+	height: calc((100% - 22px)/4);
+	justify-content: center;
+	overflow: hidden;
+	padding: 5px 15px 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+.av-learning-list > div:hover .title {text-decoration: underline}
+.av-learning-list > div .separator   {border-bottom: 2px solid #DCE1E4;height: 5px}
+.av-learning-list > div .info-block
+	{
+	height: calc((100% - 22px)/4*3);
+	overflow: hidden;
+	padding: 5px 15px 0 15px;
+	}
+.av-learning-list > div .info-block .test-info-row
+	{
+	font-weight: bold;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-learning-list > div .info-block .text
+	{
+	color: #717984;
+	text-align: justify;
+	text-indent: 15px;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px)
+	{
+	.av-learning-list > div {width: calc((100% - 20px*3)/3);height: 200px}
+	}
+@media (min-width: 768px) and (max-width: 1199px)
+	{
+	.av-learning-list > div {width: calc((100% - 20px*2)/2);height: 250px}
+	}
+@media (max-width: 767px)
+	{
+	.av-learning-list > div {width: 100%;height: 250px}
+	}

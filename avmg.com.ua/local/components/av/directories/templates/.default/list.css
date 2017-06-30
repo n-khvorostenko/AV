@@ -1,0 +1,9 @@
+@media (min-width: 992px)
+	{
+	.av-directories-filter-col          {border-right: 1px solid #ECEFF1;padding-right: 65px !important}
+	.av-directories-list-col.filter-use {border-left:  1px solid #ECEFF1;padding-left:  66px !important;margin-left: -1px !important}
+	}
+@media (max-width: 991px)
+	{
+	.av-directories-filter-col {padding-bottom: 52px !important}
+	}

@@ -1,0 +1,128 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+#workarea-content     {background-color: transparent !important}
+.bx-html-editor       {border-color: #D5DBDF !important;border-radius: 2px}
+.bxhtmled-toolbar-cnt {background: #F5F6F7 !important}
+
+.av-cargo-traffic-light-item-form        h3,
+.av-cargo-traffic-light-item-form-delete h3,
+.av-cargo-traffic-light-item-form table,
+.av-cargo-traffic-light-item-form td,
+.av-cargo-traffic-light-item-form th
+	{
+	background: transparent;
+	border: none;
+	font-size: 100%;
+	font-weight: normal;
+	outline: none;
+	padding: 0;
+	margin:  0;
+	}
+
+.av-cargo-traffic-light-item-form a:hover,
+.av-cargo-traffic-light-item-form a:active,
+.av-cargo-traffic-light-item-form a:focus {outline: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- form ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form                    {color: #717A84}
+.av-cargo-traffic-light-item-form .form              {font-size: 85%}
+.av-cargo-traffic-light-item-form .form:not(.active) {display: none}
+.av-cargo-traffic-light-item-form .form h3
+	{
+	align-items: center;
+	background-color: #717A84;
+	color: #FFF;
+	display: flex;
+	font-weight: bold;
+	justify-content: space-between;
+	padding: 15px;
+	margin-bottom: 15px;
+	}
+.av-cargo-traffic-light-item-form .form h3 > .delete-link:hover {cursor: pointer;text-decoration: underline}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- tabs ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form .tabs > *
+	{
+	border: 1px solid;
+	border-top-left-radius:  2px;
+	border-top-right-radius: 2px;
+	display: inline-block;
+	font-size: 85%;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	min-width: 120px;
+	}
+.av-cargo-traffic-light-item-form .tabs > *:not(:last-child) {margin-right: 7px}
+.av-cargo-traffic-light-item-form .tabs > *.active           {background-color: #717A84;border-color: #717A84;color: #FFF}
+.av-cargo-traffic-light-item-form .tabs > *:not(.active)     {background-color: #D5DBDF;border-color: #D5DBDF;cursor: pointer}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- main form ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form .form.main    {background-color: #FFF;display: flex;flex-wrap: wrap}
+.av-cargo-traffic-light-item-form .form.main h3 {width: 100%}
+
+.av-cargo-traffic-light-item-form .form.main .column                {width: calc((100% - 155px)/3)}
+.av-cargo-traffic-light-item-form .form.main .column:nth-of-type(1) {margin-left: 15px}
+.av-cargo-traffic-light-item-form .form.main .column:nth-of-type(2) {margin: 0 60px}
+.av-cargo-traffic-light-item-form .form.main .column:nth-of-type(3) {margin-right: 15px}
+
+.av-cargo-traffic-light-item-form .form.main .column > *:not(:last-child)         {margin-bottom: 7px}
+.av-cargo-traffic-light-item-form .form.main .column > * > .title                 {font-weight: bold;margin-bottom: 7px}
+.av-cargo-traffic-light-item-form .form.main .column > * > .title.required::after {content: '*';display: inline-block}
+.av-cargo-traffic-light-item-form .form.main .column > * > .input                 {height: 30px}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- rights form --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form .form.rights         {background-color: #FFF}
+.av-cargo-traffic-light-item-form .form.rights > table {width: 100%}
+/* -------------------------------------------------------------------- */
+/* --------------------------- history form --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form .form.history                               {width: 100%}
+.av-cargo-traffic-light-item-form .form.history th,
+.av-cargo-traffic-light-item-form .form.history td                            {padding: 15px 5px;text-align: center}
+.av-cargo-traffic-light-item-form .form.history th                            {background: #717A84;color: #FFF}
+.av-cargo-traffic-light-item-form .form.history td                            {background: #FFF}
+.av-cargo-traffic-light-item-form .form.history tr:not(:first-child):hover td {background: transparent}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ buttons ----------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form .buttons-row
+	{
+	align-items: center;
+	background: #FFF;
+	display: flex;
+	padding: 20px 15px 30px 15px;
+	}
+.av-cargo-traffic-light-item-form .buttons-row > *:not(:last-child) {margin-right: 20px}
+.av-cargo-traffic-light-item-form .buttons-row [name=save],
+.av-cargo-traffic-light-item-form .buttons-row [name=apply]         {width: calc((100% - 120px)/6 - 10px)}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- delete form --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-item-form-delete
+	{
+	background: #FFF;
+	display: none;
+	min-width: 400px;
+	}
+.av-cargo-traffic-light-item-form-delete > h3
+	{
+	background-color: #717A84;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 25px;
+	text-align: center;
+	}
+.av-cargo-traffic-light-item-form-delete > div
+	{
+	display: flex;
+	justify-content: center;
+	padding: 15px 25px;
+	}
+.av-cargo-traffic-light-item-form-delete > div > *                  {width: 140px}
+.av-cargo-traffic-light-item-form-delete > div > *:not(:last-child) {margin-right: 20px}

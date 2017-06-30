@@ -1,0 +1,1 @@
+<?=ShowError(implode('<br>', (new av_cargo_traffic())->GetUninstallErrors()))?>

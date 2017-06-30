@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-corp-input
+	{
+	border:  none;
+	margin:  0;
+	padding: 0;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ input ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-corp-input,
+.av-form-elements-corp-input-placeholder
+	{
+	border: 1px solid #D5DBDF;
+	border-radius: 2px;
+	font-size: 85%;
+	line-height: 14px;
+	padding: 6px 7px;
+	width: calc(100% - 16px);
+	}
+
+.av-form-elements-corp-input-placeholder        {border-color: transparent;margin-top: -28px}
+.av-form-elements-corp-input-placeholder.hidden {display: none}
+
+.av-form-elements-corp-input:not(.alert-input):not([disabled]):hover,
+.av-form-elements-corp-input:not(.alert-input):not([disabled]):active,
+.av-form-elements-corp-input:not(.alert-input):not([disabled]):focus {border-color: #B6CBD0}
+.av-form-elements-corp-input.alert-input                             {border-color: #CC0000}
+.av-form-elements-corp-input[disabled]                               {background: #F5F6F7}

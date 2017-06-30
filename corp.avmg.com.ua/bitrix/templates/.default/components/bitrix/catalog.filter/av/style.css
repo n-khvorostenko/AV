@@ -1,0 +1,12 @@
+.av-filter                {display: flex;flex-wrap: wrap;margin-top: -13px}
+.av-filter .field-row,
+.av-filter .cancel-button {margin-top: 13px;width: 100%}
+.av-filter .submit-button {display: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-filter.two-columns .field-row                   {width: calc(50% - 13px)}
+	.av-filter.two-columns .field-row:nth-of-type(2n+1) {margin-right: 26px}
+	}

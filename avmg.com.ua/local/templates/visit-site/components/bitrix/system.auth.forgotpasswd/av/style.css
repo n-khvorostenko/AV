@@ -1,0 +1,6 @@
+.av-forgotpass-form                      {margin: auto;text-align: center;max-width: 650px}
+.av-forgotpass-form > *:not(:last-child) {margin-bottom: 26px}
+.av-forgotpass-form .title               {font-size: 137.5%;font-weight: bold}
+.av-forgotpass-form .input-row,
+.av-forgotpass-form .captcha-row         {margin: 0 auto 26px auto;max-width: 450px}
+.av-forgotpass-form .button-row > *      {margin: auto;min-width: 200px}

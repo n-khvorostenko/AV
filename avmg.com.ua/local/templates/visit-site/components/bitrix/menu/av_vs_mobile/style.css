@@ -1,0 +1,105 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-mobile,
+.av-menu-mobile ul,
+.av-menu-mobile li        {padding: 0;margin: 0}
+.av-menu-mobile li:before {display: none !important}
+
+.av-menu-mobile .main-link,
+.av-menu-mobile .main-link:hover,
+.av-menu-mobile .main-link:active,
+.av-menu-mobile .main-link:focus,
+.av-menu-mobile .main-link:visited,
+.av-menu-mobile  .sub-link,
+.av-menu-mobile  .sub-link:hover,
+.av-menu-mobile  .sub-link:active,
+.av-menu-mobile  .sub-link:focus,
+.av-menu-mobile  .sub-link:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- icon bar ----------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-mobile-call-button
+	{
+	display: inline-block;
+	padding-right: 48px;
+	position: relative;
+	width:  48px;
+	height: 48px;
+	}
+.av-menu-mobile-call-button > *
+	{
+	background: #B6C0C6;
+	border-radius: 3px;
+	position: absolute;
+	transition: all .2s ease-out;
+	width:  18px;
+	height: 2px;
+	left:   15px;
+	}
+
+.av-menu-mobile-call-button        > :nth-child(1) {top: 18px}
+.av-menu-mobile-call-button.active > :nth-child(1) {top: 23px;transform: rotate(45deg)}
+.av-menu-mobile-call-button        > :nth-child(2) {top: 23px}
+.av-menu-mobile-call-button.active > :nth-child(2) {opacity: 0}
+.av-menu-mobile-call-button        > :nth-child(3) {top: 28px}
+.av-menu-mobile-call-button.active > :nth-child(3) {top: 23px;transform: rotate(-45deg)}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- menu ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-mobile
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	display: none;
+	padding: 20px 0 20px 50px;
+	position: absolute;
+	width: 300px;
+	z-index: 150;
+	}
+.av-menu-mobile a {display: block}
+
+.av-menu-mobile .main-link:hover,
+.av-menu-mobile .main-link:active,
+.av-menu-mobile .main-link:focus,
+.av-menu-mobile  .sub-link:hover,
+.av-menu-mobile  .sub-link:active,
+.av-menu-mobile  .sub-link:focus,
+.av-menu-mobile .selected-item                        {color: #CC0000 !important}
+.av-menu-mobile  .sub-link:not(.selected-item):hover,
+.av-menu-mobile  .sub-link:not(.selected-item):active,
+.av-menu-mobile  .sub-link:not(.selected-item):focus  {text-decoration: underline}
+
+.av-menu-mobile > li
+	{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 10px;
+	width: 250px;
+	}
+.av-menu-mobile .main-link
+	{
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 48px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: calc(100% - 48px);
+	}
+.av-menu-mobile .open-child-menu
+	{
+	background: url(images/arrow-submenu.png) center center no-repeat;
+	background-size: 24px;
+	cursor: pointer;
+	transition: .5s;
+	width:  48px;
+	height: 48px;
+	}
+.av-menu-mobile .open-child-menu.active {transform: rotate(-180deg)}
+
+.av-menu-mobile ul                                 {display: none;padding: 0 20px 0 30px;width: 100%}
+.av-menu-mobile                          .sub-link {overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.av-menu-mobile ul > li:not(:last-child) .sub-link {padding-bottom: 9px}
+
+.av-menu-mobile .auth-row {border-top: 1px solid #B6C0C6;width: 230px}

@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-directories-detail .relative-elements-block a,
+.av-directories-detail .relative-elements-block a:visited,
+.av-directories-detail .relative-elements-block a:hover,
+.av-directories-detail .relative-elements-block a:active,
+.av-directories-detail .relative-elements-block a:focus {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-directories-detail .relative-elements-block               {background: #FAFAFA;padding: 10px}
+.av-directories-detail .relative-elements-block > div         {font-weight: bold;margin-bottom: 24px}
+.av-directories-detail .relative-elements-block a,
+.av-directories-detail .relative-elements-block button        {color: #CC0000;display: block}
+.av-directories-detail .relative-elements-block a:visited,
+.av-directories-detail .relative-elements-block a:hover,
+.av-directories-detail .relative-elements-block a:focus,
+.av-directories-detail .relative-elements-block a:active,
+.av-directories-detail .relative-elements-block button:hover,
+.av-directories-detail .relative-elements-block button:focus,
+.av-directories-detail .relative-elements-block button:active {color: #CC0000;text-decoration: underline}
+
+.av-directories-detail .back-link-cell                        {margin-top: 52px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-directories-detail > img,
+	.av-directories-detail .relative-elements-block {width: 33.33%}
+	.av-directories-detail .relative-elements-block {margin-top: 52px}
+	.av-directories-detail .info-block              {float: right;padding-left: 26px;width: 66.66%}
+	}
+@media (max-width: 991px)
+	{
+	.av-directories-detail > img,
+	.av-directories-detail .info-block,
+	.av-directories-detail .relative-elements-block {width: 100%}
+	.av-directories-detail > img                    {display: block;margin-bottom: 26px;max-width: 350px}
+	.av-directories-detail .relative-elements-block {margin-top: 104px}
+	.av-directories-detail .back-link-cell          {text-align: center}
+	}

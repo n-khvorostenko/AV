@@ -1,0 +1,110 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-guest-form ul        {padding: 0;margin: 0}
+#av-auth-guest-form li:before {display: none !important}
+
+#av-auth-user-menu a,
+#av-auth-user-menu a:hover,
+#av-auth-user-menu a:focus,
+#av-auth-user-menu a:active,
+#av-auth-user-menu a:visited {color: inherit}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- guest bar ----------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-guest-bar        {align-items: center;cursor: pointer;display: flex}
+#av-auth-guest-bar:hover,
+#av-auth-guest-bar:active,
+#av-auth-guest-bar:focus,
+#av-auth-guest-bar.active {color: #CC0000;text-decoration: underline}
+#av-auth-guest-bar > img  {border-radius: 24px;margin-right: 5px;width: 24px;height: 24px}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- guest form ---------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-guest-form
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	display: none;
+	max-width: 350px;
+	}
+#av-auth-guest-form a,
+#av-auth-guest-form a:visited {color: #CC0000}
+
+#av-auth-guest-form .close-form-button
+	{
+	background: url(images/close_form.png) center center no-repeat;
+	background-size: 24px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top:   0;
+	width:  48px;
+	height: 48px;
+	}
+#av-auth-guest-form .form-menu
+	{
+	background: #FAFAFA;
+	display: flex;
+	font-size: 114.3%;
+	line-height: 28px;
+	padding: 10px 48px 10px 20px;
+	}
+#av-auth-guest-form .form-menu li                    {display: inline-block}
+#av-auth-guest-form .form-menu li:not(:first-child)  {padding-left: 20px}
+#av-auth-guest-form .form-menu li:not(:last-child)   {border-right: 1px solid #B6C0C6;padding-right: 20px}
+#av-auth-guest-form .form-menu li.active             {font-weight: bold}
+#av-auth-guest-form .form-menu li:not(.active)       {color: #B6C0C6;cursor: pointer}
+#av-auth-guest-form .form-menu li:not(.active):hover {color: #CC0000;text-decoration: underline}
+
+#av-auth-guest-form > form                            {padding: 0 20px 20px 20px}
+#av-auth-guest-form > form:not(.active)               {display: none}
+#av-auth-guest-form > form .errors-block              {color: #CC0000;font-size: 80%;margin-bottom: 13px}
+#av-auth-guest-form > form .remember-me-cell          {margin: 10px 0}
+#av-auth-guest-form > form button                     {margin-top: 26px;width: 100%}
+#av-auth-guest-form > form .soc-services-block        {margin-top: 26px;text-align: center}
+#av-auth-guest-form > form .soc-services-block .title {font-weight: bold;margin-bottom: 13px}
+#av-auth-guest-form > form .captcha-block             {margin-top: 13px}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- user menu ----------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-user-panel               {align-items: center;cursor: pointer;display: flex}
+#av-auth-user-panel        > img  {border-radius: 24px;margin-right: 5px;width: 24px;height: 24px}
+#av-auth-user-panel        > div
+	{
+	background: url(images/user_bar_arrow.png) no-repeat;
+	background-size: contain;
+	transition: .3s;
+	width:  24px;
+	height: 24px;
+	}
+#av-auth-user-panel.active > div  {transform: rotate(-180deg)}
+#av-auth-user-panel:hover  > span,
+#av-auth-user-panel:active > span,
+#av-auth-user-panel:focus  > span,
+#av-auth-user-panel.active > span {color: #CC0000;text-decoration: underline}
+
+#av-auth-user-menu
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	display: none;
+	padding: 5px;
+	}
+#av-auth-user-menu input[type=hidden] {display: none}
+#av-auth-user-menu .menu-item         {align-items: center;display: flex;padding: 3px}
+#av-auth-user-menu .menu-item:hover,
+#av-auth-user-menu .menu-item:active,
+#av-auth-user-menu .menu-item:focus,
+#av-auth-user-menu .menu-item:hover   {color: #CC0000;text-decoration: underline}
+#av-auth-user-menu .menu-item::before
+	{
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	margin-right: 10px;
+	width:  24px;
+	height: 24px;
+	}
+#av-auth-user-menu .menu-item.logout::before {background-image: url(images/logout.png)}

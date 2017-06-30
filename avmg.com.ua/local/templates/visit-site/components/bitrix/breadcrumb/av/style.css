@@ -1,0 +1,9 @@
+.av-breadcrumb       {font-size: 81.25%}
+.av-breadcrumb > *   {display: inline-block}
+.av-breadcrumb > div {margin: 0 6px}
+
+.av-breadcrumb a,
+.av-breadcrumb a:visited {color: inherit}
+.av-breadcrumb a:hover,
+.av-breadcrumb a:active,
+.av-breadcrumb a:focus   {color: #CC0000}

@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-pager a,
+.av-pager a:hover,
+.av-pager a:active,
+.av-pager a:focus,
+.av-pager a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ pager ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-pager
+	{
+	align-items: center;
+	display: flex;
+	font-size: 112.5%;
+	justify-content: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	}
+.av-pager > *
+	{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	}
+.av-pager .page:not(.selected):hover,
+.av-pager .page:not(.selected):active,
+.av-pager .page:not(.selected):focus,
+.av-pager        .pager-switch:hover,
+.av-pager        .pager-switch:active,
+.av-pager        .pager-switch:focus
+	{
+	border-radius: 100%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	outline: none;
+	}
+.av-pager .page:not(.selected):active {background: #CC0000;color: #FFF}
+.av-pager .page.selected              {color: #CC0000}
+
+.av-pager .pager-switch             {background-repeat: no-repeat;background-size: 35px}
+.av-pager .pager-switch.back        {background-image: url(images/pager_prev.png);background-position: 43% center}
+.av-pager .pager-switch.next        {background-image: url(images/pager_next.png);background-position: 58% center}
+.av-pager .pager-switch:active      {background-color: #CC0000}
+.av-pager .pager-switch.back:active {background-image: url(images/pager_prev_active.png)}
+.av-pager .pager-switch.next:active {background-image: url(images/pager_next_active.png)}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ pager ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-pager               {margin-bottom: -9px}
+	.av-pager .pager-switch,
+	.av-pager .space.mobile {display: none}
+	.av-pager .page         {width: 44px;height: 44px}
+	}
+@media (max-width: 767px)
+	{
+	.av-pager                                 {margin-bottom: -11px}
+	.av-pager           .space:not(.mobile),
+	.av-pager .page.additional:not(.selected) {display: none}
+	.av-pager .page,
+	.av-pager .pager-switch                   {width: 48px;height: 48px}
+	}

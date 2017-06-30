@@ -1,0 +1,19 @@
+.av-form-elements-select-def-alt select {display: none}
+
+.av-form-elements-select-def-alt > div
+	{
+	background: url(images/arrow.png) center right no-repeat;
+	background-size: 24px;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 12px 24px 12px 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-select-def-alt > div:hover,
+.av-form-elements-select-def-alt > div:focus,
+.av-form-elements-select-def-alt > div:active           {box-shadow: 0 2px 4px rgba(76, 82, 85, 0.25)}
+.av-form-elements-select-def-alt > div.selected,
+.av-form-elements-select-def-alt > div:hover            {color: #CC0000}
+.av-form-elements-select-def-alt > div:active           {background: #CC0000 url(images/arrow_active.png) center right no-repeat;color: #FFF}
+.av-form-elements-select-def-alt > div:not(:last-child) {border-bottom: 1px solid #B6C0C6}

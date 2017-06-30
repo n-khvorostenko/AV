@@ -1,0 +1,75 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-tablet-icons        a,
+.av-menu-tablet-icons        a:visited,
+.av-menu-tablet-icons        a:hover,
+.av-menu-tablet-icons        a:active,
+.av-menu-tablet-icons        a:focus,
+.av-menu-tablet-icons-mobile a,
+.av-menu-tablet-icons-mobile a:visited,
+.av-menu-tablet-icons-mobile a:hover,
+.av-menu-tablet-icons-mobile a:active,
+.av-menu-tablet-icons-mobile a:focus {color: inherit !important;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- menu ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-tablet-icons-title {font-weight: bold;padding-bottom: 13px}
+.av-menu-tablet-icons       {align-items: center;display: flex;flex-wrap: wrap;margin: -5px}
+.av-menu-tablet-icons a     {margin: 5px}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- menu mobile --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-tablet-icons-mobile-title
+	{
+	border: 1px solid #F4F2F2;
+	border-radius: 2px;
+	cursor: pointer;
+	display: flex;
+	font-weight: bold;
+	justify-content: space-between;
+	padding: 12px 3px 12px 10px;
+	}
+.av-menu-tablet-icons-mobile-title > div:nth-child(2)
+	{
+	background: url(images/arrow.png) center center no-repeat;
+	background-size: cover;
+	transition: .3s;
+	width:  24px;
+	height: 24px;
+	}
+.av-menu-tablet-icons-mobile-title.active                    {border-bottom-left-radius: 0;border-bottom-right-radius: 0}
+.av-menu-tablet-icons-mobile-title.active > div:nth-child(2) {transform: rotate(-180deg)}
+
+.av-menu-tablet-icons-mobile
+	{
+	border: 1px solid #F4F2F2;
+	border-top: none;
+	border-bottom-left-radius:  2px;
+	border-bottom-right-radius: 2px;
+	display: none;
+	}
+.av-menu-tablet-icons-mobile > a
+	{
+	display: block;
+	overflow: hidden;
+	padding: 12px 26px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-menu-tablet-icons-mobile > a:not(:last-child) {border-bottom: 1px solid #F4F2F2}
+.av-menu-tablet-icons-mobile > a:hover,
+.av-menu-tablet-icons-mobile > a:active,
+.av-menu-tablet-icons-mobile > a:focus            {background: #FAFAFA}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-menu-tablet-icons-mobile-title {display: none}
+	}
+@media (max-width: 991px)
+	{
+	.av-menu-tablet-icons-title,
+	.av-menu-tablet-icons {display: none}
+	}

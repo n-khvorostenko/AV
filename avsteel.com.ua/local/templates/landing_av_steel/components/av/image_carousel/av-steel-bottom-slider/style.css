@@ -1,0 +1,49 @@
+#bottom-slider-wrap .small-img .slick-slide svg {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 4px 6px;
+}
+
+#bottom-slider-wrap .center-slider-title {text-align: center;
+border-top: none;
+font-size: 25px
+}
+#bottom-slider-wrap .slick-arrow {
+	background: url(/upload/av_site/landings/av-steel/arrow-banner.svg) center center no-repeat;
+	background-size: contain;
+	border: 1px solid #D3D3D3 !important;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	transition: .4s;
+	border: none;
+	top: 37%;
+	outline: none;
+}
+#bottom-slider-wrap .slick-track{
+	color: #414042;
+	display: inline-flex;
+	align-items: stretch;
+}
+#bottom-slider-wrap .slick-arrow:hover {
+	background: url(/upload/av_site/landings/av-steel/arrow-banner-hover.svg) center center no-repeat;
+	transition: .4s;
+}
+#bottom-slider-wrap .slick-prev  {left: -30px;}
+#bottom-slider-wrap .slick-next  {
+	display: block;
+	float: right;
+	right: -30px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+#bottom-slider-wrap .slick-list {display: flex !important;}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ #bottom-slider-wrap .slick-list {display: block !important;}
+ #bottom-slider-wrap .slick-list svg {display: none ;}
+}

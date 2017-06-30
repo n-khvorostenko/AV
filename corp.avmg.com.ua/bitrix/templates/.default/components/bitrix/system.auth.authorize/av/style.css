@@ -1,0 +1,110 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+p{
+	margin: 0 !important;
+	padding-bottom: 10px;
+}
+input{
+	background-color: transparent;
+	border: none;
+	color: rgba(255,255,255, .9) !important;
+	font-size: 16px !important;
+	outline: none;
+}
+.btn {
+	border: 2px solid rgba(255,255,255, .9);
+	letter-spacing: 1px;
+	padding: 5px 10px;
+	transition: .6s;
+}
+.btn:hover {
+	box-shadow:  0px 0px 0px 2px #f7f7f7;
+	transition: .6s;
+}
+label {
+	color: rgba(255,255,255, .9);
+	font-size: 18px;
+	cursor: pointer;
+}
+.inputWrap {
+	max-width: 330px;
+	margin: 10px auto;
+	border-bottom: 1px solid rgba(255,255,255, .9);
+	padding: 5px;
+
+}
+#notification{
+	color: rgba(255,255,255, .9);
+	font-size: 12px;
+}
+.alert-desctope,
+.alert-mobile {
+	max-width: 225px;
+	background-color: rgba(255,255,255, .9);
+	border-radius: 4px;
+	margin: 0 auto;
+	line-height: 16px;
+
+}
+.arrow-left {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 20px 15px 0;
+    border-color: transparent rgba(255,255,255, .9) transparent transparent;
+    left: -20px;
+    top: 14px;
+}
+.alert-desctope span,
+.alert-mobile span {
+	font-size: 18px;
+}
+.alert-mobile {
+	max-width: 300px;
+	margin: 10px auto;
+}
+.alert-desctope {
+	position: absolute;
+	left: 620px;
+	right: 0;
+	margin: 0 auto;
+	margin-top: -40px;
+}
+
+@media (max-width: 350px) { 
+	.btn {
+		font-size: 15px !important;
+	}
+	.inputWrap {
+		max-width: 300px;
+	}
+}
+/*****IE********/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.alert-desctope {
+		max-width: 225px;
+		position: absolute;
+		left:auto;
+		right:auto;
+		margin: 0 auto;
+		margin-top: -40px;
+		margin-left: 195px;
+	}
+	.inputWrap {
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,155 @@
+.av-vs-page-logo{
+    margin-top: 45px;
+}
+
+.av-vs-page-title-sm-block{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.av-vs-page-block-title{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 52px;
+}
+
+.av-vs-page-block-subtitle {
+    text-align: center;
+}
+
+.av-vs-page-block-fon-caunt{
+    background: url(/upload/av_site/about/fon_list.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.av-vs-page-block-employees{
+    background: url(/upload/av_site/about/fon_hand.jpg) no-repeat;
+    background-size: cover;
+    padding: 78px 0;
+}
+
+.av-vs-page-text-sm-block {
+    padding: 15px 40px 15px 40px;
+}
+
+.content > *:nth-child(1){
+    color: #CC0000
+}
+
+.content > *:nth-child(2){
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.av-vs-page-block{
+    padding: 78px 0;
+    text-align: justify
+}
+
+.av-vs-page-circle
+{
+    background: center center no-repeat;
+    background-size: 48px;
+    align-items: center;
+    color: #CC0000;
+    display: flex;
+    font-size: 300%;
+    justify-content: center;
+    margin: 20px auto;
+    height: 85px;
+    width:  85px;
+}
+
+.av-vs-page-background-image{
+    width: 165px;
+    background-size: 165px;
+    height: 165px;
+}
+
+.av-vs-page-circle[img1] {
+    background-image: url(/upload/av_site/about/prices.svg);
+}
+.av-vs-page-circle[img2] {
+    background-image: url(/upload/av_site/about/supply.svg);
+}
+
+.av-vs-page-circle[img3] {
+    background-image: url(/upload/av_site/about/range.svg);
+}
+
+.av-vs-page-circle[img4] {
+    background-image: url(/upload/av_site/about/delivery.svg);
+}
+
+.av-vs-page-circle[img5] {
+    background-image: url(/upload/av_site/about/service.svg);
+}
+.av-vs-page-circle[img6] {
+    background-image: url(/upload/av_site/about/sertificates.svg);
+}
+
+.av-vs-page-circle[img7] {
+    background-image: url(/upload/av_site/about/stability.svg);
+}
+
+.av-vs-page-circle[img8] {
+    background-image: url(/upload/av_site/about/reability.svg);
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+    .av-vs-page-text-sm-block {
+        padding: 15px 20px 15px 20px;
+    }
+
+    .av-vs-page-background-image{
+        width: 145px;
+        background-size: 145px;
+        height: 145px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    .av-vs-page-logo {
+        display: block;
+        margin: 20px auto 0 auto ;
+    }
+}
+
+@media screen and (max-width:769px) {
+
+    .av-vs-page-title-sm-block {
+        padding-top: 10px;
+    }
+
+    .av-vs-page-block-title {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .av-vs-page-block {
+        padding: 40px 0;
+    }
+
+    .av-vs-page-block-employees{
+            padding: 60px 0;
+    }
+
+    .av-vs-page-circle{
+        margin: auto;
+    }
+
+    .av-vs-page-logo {
+        display: block;
+        margin: 20px auto 0 auto ;
+        width: 50%;
+    }
+}

@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-bases-same-bases-list a,
+.av-bases-same-bases-list a:hover,
+.av-bases-same-bases-list a:focus,
+.av-bases-same-bases-list a:active,
+.av-bases-same-bases-list a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ items ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-bases-same-bases-list
+	{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+	}
+
+.av-bases-same-bases-list > div                              {cursor: pointer;padding: 10px;transition: .3s}
+.av-bases-same-bases-list > div:hover                        {box-shadow: 0 4px 8px rgba(76,82,85,0.25)}
+.av-bases-same-bases-list > div.closed                       {opacity: 0.5}
+.av-bases-same-bases-list > div > h3                         {overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.av-bases-same-bases-list > div > div                        {padding-left:   13px;font-size: 87.5%}
+.av-bases-same-bases-list > div > div > div:not(:last-child) {padding-bottom: 13px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px)
+	{
+	.av-bases-same-bases-list > div                     {width: calc((100% - 18px)/4)}
+	.av-bases-same-bases-list > div:not(:nth-child(4n)) {margin-right: 6px}
+	}
+@media (min-width: 992px) and (max-width: 1199px)
+	{
+	.av-bases-same-bases-list > div                     {width: calc((100% - 12px)/3)}
+	.av-bases-same-bases-list > div:not(:nth-child(3n)) {margin-right: 6px}
+	}
+@media (min-width: 768px) and (max-width: 991px)
+	{
+	.av-bases-same-bases-list > div                     {width: calc((100% - 6px)/2)}
+	.av-bases-same-bases-list > div:not(:nth-child(2n)) {margin-right: 6px}
+	}
+@media (max-width: 767px)
+	{
+	.av-bases-same-bases-list > div {width: 100%}
+	}

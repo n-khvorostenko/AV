@@ -1,0 +1,25 @@
+.av-form-elements-av_site-radio input                  {display: none}
+.av-form-elements-av_site-radio                        {display: flex;flex-wrap: wrap}
+.av-form-elements-av_site-radio          > label       {color: #B6C0C6;padding: 5px 0 5px 5px;width: 100%}
+.av-form-elements-av_site-radio.required > label:after {content: '*';color: #CC0000;display: inline-block;padding-left: 3px}
+
+.av-form-elements-av_site-radio > span                    {align-items: center;display: flex}
+.av-form-elements-av_site-radio > span:not(:last-of-type) {margin-right: 26px}
+.av-form-elements-av_site-radio > span label              {cursor: pointer}
+.av-form-elements-av_site-radio > span input + label
+	{
+	background-image: url(images/radio_unchecked.png);
+	background-size: 16px;
+	margin-right: 7px;
+	width:  16px;
+	height: 16px;
+	}
+.av-form-elements-av_site-radio             > span input[checked]       + label {background-image: url(images/radio_checked.png)}
+.av-form-elements-av_site-radio.alert-input > span input:not([checked]) + label {background-image: url(images/radio_alert.png)}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-form-elements-av_site-radio > label {font-size: 87.5%}
+	}

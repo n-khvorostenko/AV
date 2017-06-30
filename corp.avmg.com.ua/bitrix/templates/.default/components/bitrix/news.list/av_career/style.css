@@ -1,0 +1,47 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-career-list a,
+.av-career-list a:hover,
+.av-career-list a:focus,
+.av-career-list a:active,
+.av-career-list a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ items ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-career-list > div
+	{
+	background: center right no-repeat;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 6px 24px 6px 13px;
+	letter-spacing: 1px;
+	transition: .3s;
+	}
+.av-career-list > div:hover
+	{
+	background-image: url(images/arrow.png);
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	background-size: 24px;
+	}
+.av-career-list > div:not(:last-child) {margin-bottom: 20px}
+
+.av-career-list > div.closed,
+.av-career-list > div.closed a     {color: #B6C0C6 !important}
+.av-career-list > div.closed:hover {background-image: url(images/arrow_light.png)}
+
+.av-career-list > div a
+	{
+	color: #CC0000 !important;
+	display: block;
+	font-size: 112.5%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+.av-career-list > div > div {font-size: 87.5%}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ other ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-career-list              {margin: -6px -13px}
+.av-career-list-pager.bottom {margin-top: 52px}

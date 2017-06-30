@@ -1,0 +1,34 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------- list ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-blog-detail .rating-row
+	{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	}
+.av-blog-detail .rating-row .element-date {color: #B6C0C6;font-size: 87.5%}
+.av-blog-detail .back-link-cell           {margin-top: 52px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-blog-detail > img,
+	.av-blog-detail .same-articles-block {width: calc((100% - 26px)/3)}
+	.av-blog-detail .same-articles-block {margin-top: 52px}
+	.av-blog-detail .info-block          {float: right;width: calc((100% - 26px)/3*2)}
+	}
+@media (min-width: 768px) and (max-width: 991px)
+	{
+	.av-blog-detail > img                {display: block;margin: 0 auto 26px auto;max-width: 350px}
+	.av-blog-detail .same-articles-block {margin-top: 52px}
+	.av-blog-detail .back-link-cell      {text-align: center}
+	}
+@media (max-width: 767px)
+	{
+	.av-blog-detail > img                {display: block;margin: 0 auto 26px auto;max-width: 250px}
+	.av-blog-detail .same-articles-block {margin-top: 52px}
+	.av-blog-detail .back-link-cell      {text-align: center}
+	}

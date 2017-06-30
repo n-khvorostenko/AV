@@ -1,0 +1,16 @@
+.av-company-info-table
+	{
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	}
+.av-company-info-table td,
+.av-company-info-table th
+	{
+	border-top:    1px solid #B6C0C6;
+	border-bottom: 1px solid #B6C0C6;
+	font-size: 14px;
+	padding: 5px 20px;
+	margin: 0;
+	}

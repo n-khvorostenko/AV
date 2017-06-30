@@ -1,0 +1,55 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-mobile-user-menu a,
+#av-auth-mobile-user-menu a:hover,
+#av-auth-mobile-user-menu a:focus,
+#av-auth-mobile-user-menu a:active,
+#av-auth-mobile-user-menu a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- guest bar ----------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-mobile-guest-bar        {align-items: center;cursor: pointer;display: flex;height: 48px}
+#av-auth-mobile-guest-bar:hover,
+#av-auth-mobile-guest-bar:active,
+#av-auth-mobile-guest-bar:focus,
+#av-auth-mobile-guest-bar.active {color: #CC0000;text-decoration: underline}
+#av-auth-mobile-guest-bar > img  {border-radius: 24px;margin-right: 5px;width: 24px;height: 24px}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- user menu ----------------------------- */
+/* -------------------------------------------------------------------- */
+#av-auth-mobile-user-panel               {align-items: center;cursor: pointer;display: flex;height: 48px}
+#av-auth-mobile-user-panel        > img  {border-radius: 24px;margin-right: 5px;width: 24px;height: 24px}
+#av-auth-mobile-user-panel        > div
+	{
+	background: url(images/user_bar_arrow.png) no-repeat;
+	background-size: contain;
+	transition: .3s;
+	width:  24px;
+	height: 24px;
+	}
+#av-auth-mobile-user-panel.active > div  {transform: rotate(-180deg)}
+#av-auth-mobile-user-panel:hover  > span,
+#av-auth-mobile-user-panel:active > span,
+#av-auth-mobile-user-panel:focus  > span,
+#av-auth-mobile-user-panel.active > span {color: #CC0000;text-decoration: underline}
+
+#av-auth-mobile-user-menu,
+#av-auth-mobile-user-menu input[type=hidden]          {display: none}
+#av-auth-mobile-user-menu .menu-item                  {align-items: center;display: flex}
+#av-auth-mobile-user-menu .menu-item:not(:last-child) {padding-bottom: 6px}
+#av-auth-mobile-user-menu .menu-item:hover,
+#av-auth-mobile-user-menu .menu-item:active,
+#av-auth-mobile-user-menu .menu-item:focus,
+#av-auth-mobile-user-menu .menu-item:hover            {color: #CC0000;text-decoration: underline}
+#av-auth-mobile-user-menu .menu-item::before
+	{
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	margin-right: 5px;
+	width:  24px;
+	height: 24px;
+	}
+#av-auth-mobile-user-menu .menu-item.logout::before {background-image: url(images/logout.png)}

@@ -1,0 +1,20 @@
+.av-form-elements-av_site_alt-button
+	{
+	background: #FFF;
+	border: 1px solid #CC0000;
+	border-radius: 2px;
+	color: #CC0000;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	padding: 7px 10px;
+	margin: 0;
+	transition: .3s;
+	text-align: center;
+	text-decoration: none;
+	}
+.av-form-elements-av_site_alt-button:visited {color: #CC0000;text-decoration: none}
+.av-form-elements-av_site_alt-button:hover,
+.av-form-elements-av_site_alt-button:active,
+.av-form-elements-av_site_alt-button:focus   {box-shadow: 0 2px 4px rgba(76,82,85,0.25);text-decoration: none}
+.av-form-elements-av_site_alt-button:active  {background: #CC0000;color: #FFF}

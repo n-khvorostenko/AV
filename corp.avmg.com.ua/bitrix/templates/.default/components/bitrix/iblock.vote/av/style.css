@@ -1,0 +1,12 @@
+.av-iblock-rating {display: flex}
+
+.av-iblock-rating > i
+	{
+	background: url(images/star_unactive.png) center center no-repeat;
+	display: inline-block;
+	width:  18px;
+	height: 18px;
+	}
+.av-iblock-rating.vote-available > i         {cursor: pointer}
+.av-iblock-rating:not(.hovered)  > i.active,
+.av-iblock-rating.hovered        > i.hovered {background-image: url(images/star_active.png)}

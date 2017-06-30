@@ -1,0 +1,2 @@
+ <h2 class="text-uppercase">Наша адреса</h2>
+<img id="markerWorkPlace" class="hidden-sm hidden-xs" src="/upload/av_site/landings/av-shpola/marker.png" alt="" /><p class="workPlaseText">Черкаська область, <br>м. Шпола,<br>вул. Лебединська, 4-б<br><span>(поряд із автошколою)</span></p>

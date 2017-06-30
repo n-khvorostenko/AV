@@ -1,0 +1,10 @@
+.av-learning-tests-list-item:not(:last-child)       {margin-bottom: 30px}
+.av-learning-tests-list-item > h3                   {margin: 0 0 20px 0}
+.av-learning-tests-list-item > .important           {font-weight: bold}
+.av-learning-tests-list-item > .important a,
+.av-learning-tests-list-item > .important a:visited {color: #CC0000;text-decoration: none}
+.av-learning-tests-list-item > .important a:hover,
+.av-learning-tests-list-item > .important a:active,
+.av-learning-tests-list-item > .important a:focus   {color: #CC0000;text-decoration: underline}
+.av-learning-tests-list-item > form                 {margin-top: 15px}
+.av-learning-tests-list-item > form > [name=next]   {width: 200px}

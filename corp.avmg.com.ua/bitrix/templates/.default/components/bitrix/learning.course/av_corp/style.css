@@ -1,0 +1,13 @@
+#workarea-content
+	{
+	font-family: "OpenSans-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444;
+	padding: 25px 20px 20px 20px !important
+	}
+.av-learning-course                                   {display: flex;justify-content: space-between}
+.av-learning-course .menu                             {width: 200px}
+.av-learning-course .page                             {display: flex;flex-direction: column;width: calc(100% - 280px)}
+.av-learning-course .page:not(.start)                 {justify-content: space-between}
+.av-learning-course .page > *                         {width: 100%}
+.av-learning-course .page .course-navigation.separate {margin-top: 15px}

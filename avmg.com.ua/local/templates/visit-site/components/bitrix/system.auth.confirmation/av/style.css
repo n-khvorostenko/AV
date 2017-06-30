@@ -1,0 +1,17 @@
+.av-registration-confirmation                      {margin: auto;text-align: center;max-width: 550px}
+.av-registration-confirmation > *:not(:last-child) {margin-bottom: 26px}
+.av-registration-confirmation .title               {font-size: 137.5%;font-weight: bold}
+.av-registration-confirmation .buttons-cell > *    {width: 250px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-registration-confirmation .buttons-cell                      {text-align: center}
+	.av-registration-confirmation .buttons-cell > *:not(:last-child) {margin-right: 26px}
+	}
+@media (max-width: 767px)
+	{
+	.av-registration-confirmation .buttons-cell > *                  {display: block;margin: auto}
+	.av-registration-confirmation .buttons-cell > *:not(:last-child) {margin-bottom: 26px}
+	}

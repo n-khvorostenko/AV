@@ -1,0 +1,15 @@
+.av-search-title-mobile                               {align-items: center;display: flex}
+.av-search-title-mobile.active       > div,
+.av-search-title-mobile:not(.active) input[type=text] {display: none}
+.av-search-title-mobile.active       input[type=text] {border-bottom: 1px solid #B6C0C6;width: calc(100% - 48px)}
+.av-search-title-mobile::before
+	{
+	background: center center no-repeat;
+	background-size: 18px;
+	content: '';
+	display: inline-block;
+	width:  48px;
+	height: 48px;
+	}
+.av-search-title-mobile:not(.active)::before {background-image: url(images/search_icon.png);cursor: pointer}
+.av-search-title-mobile.active::before       {background-image: url(images/search_icon_active.png)}

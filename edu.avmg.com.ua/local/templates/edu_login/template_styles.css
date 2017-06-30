@@ -1,0 +1,81 @@
+html
+	{
+	color: #777;
+	font-family: "Helvetica New", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	height: 100%;
+	line-height: 1.6;
+	}
+
+#av-edu-login .background
+	{
+	-webkit-animation: blur 3s ;
+	-webkit-animation-fill-mode: forwards;
+	background: url(images/main_bg.jpg) center top no-repeat;
+	background-size: cover;
+	position: absolute;
+	top:    0;
+	bottom: 0;
+	left:   0;
+	right:  0;
+	z-index: -10;
+	}
+@-webkit-keyframes blur
+	{
+	0%   {-webkit-filter: blur(0px)}
+	100% {-webkit-filter: blur(5px)}
+	}
+#av-edu-login .main-window
+	{
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow:
+		0 3px 0   -1px #FFF,
+		0 3px          #CCC,
+		0 6px 0   -1px #FFF,
+		0 6px          #CCC,
+		0 0   15px 0   #CCC;
+	background: #FFF;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10% auto 0 auto;
+	padding: 30px 40px;
+	transition: .3s;
+	max-width: 650px;
+	}
+#av-edu-login .main-window > *              {width: calc((100% - 40px)/2)}
+#av-edu-login .main-window > *:nth-child(1),
+#av-edu-login .main-window > *:nth-child(2) {display: flex;flex-direction: column;justify-content: space-between}
+#av-edu-login .main-window > *:nth-child(3) {margin-left: calc((100% - 40px)/2 + 40px);text-align: center}
+
+#av-edu-login .main-window .logo                             {margin: 0 0 10px calc((100% - 130px)/2);width: 130px}
+#av-edu-login .main-window .info-block                       {text-align: justify}
+#av-edu-login .main-window .call-form-block                  {margin-top: 20px;text-align: center}
+#av-edu-login .main-window .call-form-block .title           {color: #444;font-weight: bold;margin-bottom: 20px}
+#av-edu-login .main-window .call-form-block [data-call-form] {width: 150px}
+#av-edu-login .main-window .submit-buttons-block             {display: flex;justify-content: center;margin-top: 20px}
+#av-edu-login .main-window .submit-buttons-block > *         {width: 150px}
+#av-edu-login .main-window .forgot-pass-link                 {cursor: pointer;display: inline-block;margin-top: 20px;text-decoration: underline}
+
+#av-edu-login .main-window .call-form-block:not(.registration),
+#av-edu-login .main-window .forms-block > *:not(.auth),
+#av-edu-login .main-window .submit-buttons-block > *:not([data-submit-form="auth"]):not([data-call-form="registration"]) {display: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	#av-edu-login .main-window .submit-buttons-block [data-call-form] {display: none !important}
+	}
+@media (max-width: 767px)
+	{
+	#av-edu-login .main-window                                             {max-width: 250px}
+	#av-edu-login .main-window > *                                         {width: 100%}
+	#av-edu-login .main-window > *:nth-child(3)                            {margin-left: 0}
+	#av-edu-login .main-window .submit-buttons-block > *                   {line-height: 30px;padding: 0;width: calc((100% - 10px)/2)}
+	#av-edu-login .main-window .submit-buttons-block > *:not(:first-child) {margin-left: 10px}
+
+	#av-edu-login .main-window .info-block,
+	#av-edu-login .main-window .call-form-block {display: none !important}
+	}

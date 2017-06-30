@@ -1,0 +1,124 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-list-delete-form h3
+	{
+	font-weight: normal;
+	padding: 0;
+	margin:  0;
+	}
+
+.av-cargo-traffic-light-filter-cell {margin-bottom: 30px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ table ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-list-table                          {font-size: 85%;width: 100%}
+.av-cargo-traffic-light-list-table th,
+.av-cargo-traffic-light-list-table td                       {padding: 15px 5px;text-align: center;vertical-align: middle}
+.av-cargo-traffic-light-list-table .body-row:hover          {cursor: pointer}
+.av-cargo-traffic-light-list-table .body-row:not(:hover) td {background: #FFF}
+
+.av-cargo-traffic-light-list-table .header-row th {background: #717A84;color: #FFF;font-weight: normal}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button
+	{
+	cursor: pointer;
+	margin: -4px 0 0 7px;
+	position: relative;
+	width:  16px;
+	height: 16px;
+	}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button > *
+	{
+	background: #FFF;
+	border-radius: 3px;
+	display: block;
+	position: absolute;
+	transition: .3s;
+	width: 100%;
+	height: 2px;
+	}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button       > *:nth-child(1) {top: 3px}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button       > *:nth-child(2) {top: 8px}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button       > *:nth-child(3) {top: 13px}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button:hover > *:nth-child(1) {top: 1px}
+.av-cargo-traffic-light-list-table .header-row .edit-form-button:hover > *:nth-child(3) {top: 15px}
+
+.av-cargo-traffic-light-list-table .header-row .sort-title       {cursor: pointer;display: flex;justify-content: center}
+.av-cargo-traffic-light-list-table .header-row .sort-title:hover {text-decoration: underline}
+.av-cargo-traffic-light-list-table .header-row .sort-title.up::after,
+.av-cargo-traffic-light-list-table .header-row .sort-title.down::after
+	{
+	background: center center no-repeat;
+	content: '';
+	margin-left: 10px;
+	width:  12px;
+	height: 12px;
+	}
+.av-cargo-traffic-light-list-table .header-row .sort-title.up::after   {background-image:url(images/table_sort.svg)}
+.av-cargo-traffic-light-list-table .header-row .sort-title.down::after {background-image:url(images/table_sort_down.svg)}
+
+.av-cargo-traffic-light-list-table .body-row .element-status
+	{
+	background: center center no-repeat;
+	background-size: cover;
+	margin: auto;
+	width:  75px;
+	height: 25px;
+	}
+.av-cargo-traffic-light-list-table .body-row .element-status.load        {background-image:url(images/item_status_load.svg)}
+.av-cargo-traffic-light-list-table .body-row .element-status.upload      {background-image:url(images/item_status_upload.svg)}
+.av-cargo-traffic-light-list-table .body-row .element-status.load_upload {background-image:url(images/item_status_load_upload.svg)}
+.av-cargo-traffic-light-list-table .body-row .remove-button
+	{
+	background: url(images/delete_element.svg) center center no-repeat;
+	background-size: 10px;
+	cursor: pointer;
+	margin: auto;
+	transition: .3s;
+	width:  20px;
+	height: 20px;
+	}
+.av-cargo-traffic-light-list-table .body-row .remove-button:hover {background-image: url(images/delete_element_hover.svg)}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- delete form --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-cargo-traffic-light-list-delete-form
+	{
+	background: #FFF;
+	display: none;
+	min-width: 400px;
+	}
+.av-cargo-traffic-light-list-delete-form > h3
+	{
+	background-color: #717A84;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 25px;
+	text-align: center;
+	}
+.av-cargo-traffic-light-list-delete-form > div
+	{
+	display: flex;
+	justify-content: center;
+	padding: 15px 25px;
+	}
+.av-cargo-traffic-light-list-delete-form > div > *                  {width: 140px}
+.av-cargo-traffic-light-list-delete-form > div > *:not(:last-child) {margin-right: 20px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ native ------------------------------ */
+/* -------------------------------------------------------------------- */
+td.popupmenu div.popupitem div.edit    {background-image:url(images/popup/edit.gif)}
+td.popupmenu div.popupitem div.copy    {background-image:url(images/popup/copy.gif)}
+td.popupmenu div.popupitem div.delete  {background-image:url(images/popup/delete.gif)}
+td.popupmenu div.popupitem div.view    {background-image:url(images/popup/view.gif)}
+td.popupmenu div.popupitem div.checked {background-image:url(images/popup/checkbox.gif)}
+td.popupmenu div.popupitem div.list    {background-image:url(images/popup/list.gif)}
+td.popupmenu div.popupitem div.add     {background-image:url(images/popup/new.gif)}
+
+td.popupmenu div.popupitem div.grid-filters   {background-image:url(images/icons/filters.gif)}
+td.popupmenu div.popupitem div.grid-settings  {background-image:url(images/icons/settings.gif)}
+td.popupmenu div.popupitem div.grid-sort-asc  {background-image:url(images/icons/sort_asc.gif)}
+td.popupmenu div.popupitem div.grid-sort-desc {background-image:url(images/icons/sort_desc.gif)}
+td.popupmenu div.popupitem div.grid-themes    {background-image:url(images/icons/themes.gif)}
+td.popupmenu div.popupitem div.grid-views     {background-image:url(images/icons/views.gif)}
+

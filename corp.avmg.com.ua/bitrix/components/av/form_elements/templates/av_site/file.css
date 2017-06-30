@@ -1,0 +1,32 @@
+.av-form-elements-av_site-file
+	{
+	align-items: center;
+	color: #CC0000;
+	display: flex;
+	}
+.av-form-elements-av_site-file > label
+	{
+	cursor: pointer;
+	overflow: hidden;
+	text-decoration: underline;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-av_site-file > input                       {display: none !important}
+.av-form-elements-av_site-file.required:not(.active)::after  {content: '*';display: inline-block;margin-left: 3px}
+.av-form-elements-av_site-file.required:not(.active) > label {max-width: calc(100% - 9px)}
+.av-form-elements-av_site-file .clear-value                  {background: url(images/delete_file.png) center center no-repeat;cursor: pointer}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-form-elements-av_site-file                {font-size: 87.5%}
+	.av-form-elements-av_site-file .clear-value   {background-size: 18px;width: 24px;height: 24px}
+	.av-form-elements-av_site-file.active > label {max-width: calc(100% - 24px)}
+	}
+@media (max-width: 767px)
+	{
+	.av-form-elements-av_site-file .clear-value   {background-size: 24px;width: 48px;height: 48px}
+	.av-form-elements-av_site-file.active > label {max-width: calc(100% - 48px)}
+	}

@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------ items ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-certificates-list > div
+	{
+	cursor: pointer;
+	font-size: 75%;
+	height: 350px;
+	padding: 10px;
+	transition: .3s;
+	}
+.av-certificates-list > div:hover {box-shadow: 0 4px 8px rgba(76,82,85,0.25)}
+
+.av-certificates-list > div > img {display: block;height: 80%;margin: 0 auto 12px auto}
+.av-certificates-list > div .date {color: #B6C0C6}
+.av-certificates-list > div .name
+	{
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+.av-certificates-list-element-popup
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	padding: 10px;
+	max-width: 350px;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ other ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-certificates-list              {display: flex;flex-wrap: wrap;margin: -10px}
+.av-certificates-list-pager.top    {margin-bottom: 52px}
+.av-certificates-list-pager.bottom {margin-top:    52px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px)
+	{
+	.av-certificates-list > div {width: 33.33%}
+	}
+@media (min-width:992px) and (max-width: 1199px)
+	{
+	.av-certificates-list > div {width: 50%}
+	}
+@media (min-width: 768px) and (max-width: 991px)
+	{
+	.av-certificates-list > div {width: 33.33%}
+	}
+@media (max-width:767px)
+	{
+	.av-certificates-list       {justify-content: center}
+	.av-certificates-list > div {width: 200px}
+	}

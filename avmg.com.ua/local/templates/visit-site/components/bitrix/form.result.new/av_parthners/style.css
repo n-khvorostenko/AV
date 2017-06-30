@@ -1,0 +1,90 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-parthners-result-ok {color: #B6C0C6;margin-top: 10px;text-align: center}
+.av-form-parthners-title     {font-size: 36px;line-height: 36px;margin-bottom: 52px;text-align: center}
+.av-form-parthners-text      {display: flex;flex-wrap: wrap}
+
+.av-form-parthners-work-button
+	{
+	border: 1px solid #CC0000;
+	border-radius: 4px;
+	display: flex;
+	height: 48px;
+	margin-bottom: 39px;
+	}
+.av-form-parthners-work-button > *
+	{
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	}
+.av-form-parthners-work-button > *:nth-child(1)
+	{
+	background: #CC0000;
+	color: #FFF;
+	font-size: 187.5%;
+	width: 48px;
+	}
+.av-form-parthners-work-button > *:nth-child(2)
+	{
+	color: #CC0000;
+	width: calc(100% - 96px);
+	}
+.av-form-parthners-work-button > *:nth-child(3)
+	{
+	background: center center no-repeat;
+	background-size: 24px;
+	width: 48px;
+	}
+.av-form-parthners-work-button.passed                       > *:nth-child(3) {background-image: url(images/work_button_ok.png)}
+.av-form-parthners-work-button.passed:not(.unactive):active > *:nth-child(3),
+.av-form-parthners-work-button.passed:not(.unactive):focus  > *:nth-child(3) {background-image: url(images/work_button_ok_active.png)}
+
+.av-form-parthners-work-button:not(.unactive):hover,
+.av-form-parthners-work-button:not(.unactive):active,
+.av-form-parthners-work-button:not(.unactive):focus                   {box-shadow: 0 2px 4px rgba(76,82,85,0.25);cursor: pointer}
+.av-form-parthners-work-button:not(.unactive):active > *:nth-child(2),
+.av-form-parthners-work-button:not(.unactive):focus  > *:nth-child(2),
+.av-form-parthners-work-button:not(.unactive):active > *:nth-child(3),
+.av-form-parthners-work-button:not(.unactive):focus  > *:nth-child(3) {background: #CC0000;color: #FFF}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- form ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-parthners form .errors-block {color: #CC0000;margin-bottom: 10px}
+.av-form-parthners form               {display: flex;flex-wrap: wrap;margin-top: -26px}
+.av-form-parthners form .title        {font-weight: bold;margin: 26px 0 6px 0}
+.av-form-parthners form .left-column,
+.av-form-parthners form .right-column {display: flex;flex-direction: column;justify-content: space-between}
+.av-form-parthners form .buttons-row  {margin-top: 52px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-form-parthners-text > *               {width: 50%}
+	.av-form-parthners-text > *:first-of-type {padding-right: 40px}
+	.av-form-parthners-text > *:last-of-type  {padding-left:  40px}
+
+	.av-form-parthners form .left-column      {padding-right: 40px;width: 50%}
+	.av-form-parthners form .right-column     {padding-left:  40px;width: 50%}
+	}
+@media (max-width: 991px)
+	{
+	.av-form-parthners form .left-column,
+	.av-form-parthners form .right-column       {width: 100%}
+	.av-form-parthners form .buttons-row,
+	.av-form-parthners form .field-row.comments {margin-top: 26px}
+	}
+@media (max-width: 767px)
+	{
+	.av-form-parthners-title                                     {font-size: 24px;line-height: 24px;margin-bottom: 26px}
+
+	.av-form-parthners-work-button                               {flex-wrap: wrap;height: auto}
+	.av-form-parthners-work-button              > *              {width: 100% !important}
+	.av-form-parthners-work-button              > *:nth-child(1) {font-size: 100%;font-weight: bold;height: 24px}
+	.av-form-parthners-work-button              > *:nth-child(2) {padding: 0 5px;text-align: center}
+	.av-form-parthners-work-button.passed       > *:nth-child(3) {height: 24px}
+	.av-form-parthners-work-button:not(.passed) > *:nth-child(3) {display: none}
+	}

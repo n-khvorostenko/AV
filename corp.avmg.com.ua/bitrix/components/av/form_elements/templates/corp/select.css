@@ -1,0 +1,81 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear styles --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-corp-styled-select > ul      {margin: 0;padding: 0}
+.av-form-elements-corp-select,
+.av-form-elements-corp-styled-select li:before {display: none !important}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- label ------------------------------ */
+/* -------------------------------------------------------------------- */
+.av-form-elements-corp-styled-select:not(.disabled) {cursor: pointer}
+
+.av-form-elements-corp-styled-select > [title]
+	{
+	border: 1px solid #D5DBDF;
+	border-radius: 2px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 14px;
+	padding: 6px 8px 6px 7px;
+	}
+.av-form-elements-corp-styled-select > [title] > *:nth-child(1)
+	{
+	align-items: center;
+	display: flex;
+	height: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-corp-styled-select > [title] > *:nth-child(2)
+	{
+	background: url(images/form_select_arrow.svg) center center no-repeat;
+	background-size: 14px;
+	transition: .3s;
+	width:  14px;
+	height: 14px;
+	}
+.av-form-elements-corp-styled-select.active                           > [title] > *:nth-child(2) {transform: rotate(-180deg)}
+.av-form-elements-corp-styled-select.active                           > [title],
+.av-form-elements-corp-styled-select:not(.disabled):not(.alert-input) > [title]:hover,
+.av-form-elements-corp-styled-select:not(.disabled):not(.alert-input) > [title]:focus,
+.av-form-elements-corp-styled-select:not(.disabled):not(.alert-input) > [title]:active {border-color: #B6CBD0}
+.av-form-elements-corp-styled-select.disabled                         > [title]        {background: #F5F6F7}
+.av-form-elements-corp-styled-select.alert-input                      > [title]        {border-color: #CC0000}
+/* -------------------------------------------------------------------- */
+/* -------------------------- drop-down menu -------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-corp-styled-select .list
+	{
+	background: #FFF;
+	border-right:  1px solid #B6CBD0;
+	border-bottom: 1px solid #B6CBD0;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius:  2px;
+	display: none;
+	max-height: 150px;
+	margin-top: -2px;
+	position: absolute;
+	z-index: 10;
+	}
+.av-form-elements-corp-styled-select .list li
+	{
+	border-left: 1px solid #B6CBD0;
+	overflow: hidden;
+	padding: 6px 7px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+
+.av-form-elements-corp-styled-select.alert-input .list,
+.av-form-elements-corp-styled-select.alert-input .list li {border-color: #CC0000}
+
+.av-form-elements-corp-styled-select .list             li:hover,
+.av-form-elements-corp-styled-select .list             li:focus,
+.av-form-elements-corp-styled-select .list             li:active,
+.av-form-elements-corp-styled-select .list:not(:hover) li.selected
+	{
+	background: #717A84;
+	border-color: #717A84;
+	color: #FFF;
+	}

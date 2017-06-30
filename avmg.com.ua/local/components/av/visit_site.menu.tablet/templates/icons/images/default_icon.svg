@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 329" id="products-default-icon-svg">
+    <style>
+        #products-default-icon-svg       > * {fill: #FFF;stroke-width: 10;stroke: #4C5255}
+        #products-default-icon-svg:hover > * {stroke: #CC0000}
+    </style>
+    <polygon points="303.3 232.7 155.8 323.5 9.6 230.6 10.2 230.3 157.1 139.8"/>
+    <polygon points="302 190.2 154.9 283.1 9.1 188.2 9.5 187.9 156.2 95.3"/>
+    <polygon points="310.1 146.5 162.6 237.4 16.4 144.5 17 144.2 163.8 53.7"/>
+    <polygon points="308.8 104.1 161.7 197 15.8 102.1 16.3 101.8 163 9.2"/>
+    <line x1="154.8" y1="280.2" x2="155.7" y2="324.1"/>
+    <line x1="6.5"   y1="188.1" x2="6.9"   y2="230.6"/>
+    <line x1="161.6" y1="194"   x2="162.4" y2="237.9"/>
+    <line x1="13.3"  y1="102"   x2="13.6"  y2="144.5"/>
+    <line x1="304.4" y1="190.1" x2="305.8" y2="232.9"/>
+    <line x1="311.4" y1="104.1" x2="312.5" y2="146.8"/>
+</svg>

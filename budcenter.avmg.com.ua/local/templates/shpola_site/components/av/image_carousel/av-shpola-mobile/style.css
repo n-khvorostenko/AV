@@ -1,0 +1,6 @@
+.av-vs-cat-st-element-view-photo .big-img img           {width: 100%;max-height: 445px;}
+.av-vs-cat-st-element-view-photo .small-img,
+.av-vs-cat-st-element-view-photo .big-img               {text-align: center}
+.av-vs-cat-st-element-view-photo .small-img img[active] {border: 1px solid #CC0000 !important;}
+.av-vs-cat-st-element-view-photo .small-img .slick-track{margin: 0 auto}
+.av-vs-cat-st-element-view-photo .small-img img         {max-height: 85px}

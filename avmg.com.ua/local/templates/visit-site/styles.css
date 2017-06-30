@@ -1,0 +1,145 @@
+body, html
+	{
+	color: #4C5255;
+	font-family: "robotoregular", sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ fonts ------------------------------- */
+/* -------------------------------------------------------------------- */
+@font-face
+	{
+	font-family: 'robotoregular';
+	src:
+		url('fonts/RobotoRegular/roboto-regular-webfont.eot?#iefix')        format('embedded-opentype'),
+		url('fonts/RobotoRegular/roboto-regular-webfont.woff')              format('woff'),
+		url('fonts/RobotoRegular/roboto-regular-webfont.svg#robotoregular') format('svg');
+	font-style:  normal;
+	font-weight: normal;
+	}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- headers ------------------------------ */
+/* -------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {font-weight: normal;margin: 0;padding: 0}
+h4                     {font-weight: bold}
+h5                     {color: #78909C;font-size: 14px}
+h6                     {font-size: 12px}
+h2, h3
+	{
+	background: #FAFAFA;
+	border-bottom: 1px solid #cc0000;
+	font-size: 18px;
+	padding: 15px 10px;
+	margin-bottom: 26px;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ links ------------------------------- */
+/* -------------------------------------------------------------------- */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {color: #CC0000;text-decoration: none;outline: none}
+a:hover,
+a:focus   {text-decoration: underline}
+a:visited {color: #800080}
+/* -------------------------------------------------------------------- */
+/* -------------------------- form elements --------------------------- */
+/* -------------------------------------------------------------------- */
+input, select, textarea, button
+	{
+	background-color: transparent;
+	border:  none;
+	outline: none;
+	padding: 0;
+	margin:  0;
+	}
+label
+	{
+	font-weight: normal;
+	line-height: normal;
+	padding: 0;
+	margin:  0;
+	}
+::-ms-clear,
+::-ms-reveal           {display: none}
+textarea               {resize: none}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset !important}
+input[type=hidden]     {display: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ tables ------------------------------ */
+/* -------------------------------------------------------------------- */
+table {border-collapse: collapse;padding: 0;margin: 0}
+table td,
+table th
+	{
+	border-top:    1px solid #B6C0C6;
+	border-bottom: 1px solid #B6C0C6;
+	font-size: 14px;
+	padding: 5px 20px;
+	margin: 0;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ others ------------------------------ */
+/* -------------------------------------------------------------------- */
+ul        {padding: 0;margin: 0 0 0 20px}
+li        {list-style-type: none;padding: 0;margin: 0}
+li:before {color: #CC0000;content: '\2022';display: inline-block;margin: 0 5px 0 -15px}
+p         {padding: 0 0 26px 0;margin: 0;text-align: justify}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ classes ----------------------------- */
+/* -------------------------------------------------------------------- */
+.av-page-title {text-align: center}
+
+.av-products-image-link                        {position: relative}
+.av-products-image-link > a:nth-child(1)       {display: block;width: 100%}
+.av-products-image-link > a:nth-child(1) > img {width: 100%}
+.av-products-image-link > a:nth-child(2)
+	{
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 0 4px 8px #000;
+	position: absolute;
+	top:  20px;
+	left: 20px;
+	width: 70%;
+	}
+.av-products-image-link > a:nth-child(2),
+.av-products-image-link > a:nth-child(2):hover,
+.av-products-image-link > a:nth-child(2):active,
+.av-products-image-link > a:nth-child(2):focus,
+.av-products-image-link > a:nth-child(2):visited {color: #FFF;text-decoration: none}
+
+.av-spoiler-header:not(.disabled)
+	{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 14px;
+	}
+.av-spoiler-header:not(.disabled)::after
+	{
+	background: url(images/spoiler_close.svg) center center no-repeat;
+	background-size: 14px;
+	content: '';
+	display: block;
+	transition: .3s;
+	width:  14px;
+	height: 14px;
+	}
+.av-spoiler-header:not(.disabled):not(.open)::after {transform: rotate(45deg)}
+.av-spoiler-body:not(.disabled)                     {display: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	h1             {font-size: 36px}
+	.av-page-title {font-size: 36px;line-height: 36px;margin: 52px 0}
+	}
+@media (max-width: 767px)
+	{
+	h1             {font-size: 24px}
+	.av-page-title {font-size: 24px;line-height: 24px;margin: 26px 0}
+	}

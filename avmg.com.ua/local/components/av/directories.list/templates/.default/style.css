@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-directories-list a,
+.av-directories-list a:hover,
+.av-directories-list a:active,
+.av-directories-list a:focus,
+.av-directories-list a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-directories-list               {display: flex;flex-wrap: wrap}
+.av-directories-list .main-title   {width: 100%}
+.av-directories-list .letter-block {display: flex;flex-direction: column;padding: 0 12px 12px 12px}
+
+.av-directories-list .letter-block > ul a:active,
+.av-directories-list .letter-block > ul a:hover,
+.av-directories-list .letter-block > ul a:focus {color: #CC0000;text-decoration: underline}
+
+.av-directories-list .letter-block > a       {color: #CC0000;cursor: pointer;margin: 12px 0 0 20px;text-decoration: underline}
+.av-directories-list .letter-block > a:active,
+.av-directories-list .letter-block > a:focus {text-decoration: none}
+
+.av-directories-list .letter-block > div
+	{
+	background: #FAFAFA;
+	font-size: 114.3%;
+	font-weight: bold;
+	margin-bottom: 12px;
+	padding: 10px;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px)
+	{
+	.av-directories-list .letter-block                 {width: 33.33%}
+	.av-directories-list .letter-block:nth-child(3n+2) {padding-left:  0}
+	.av-directories-list .letter-block:nth-child(3n+4) {padding-right: 0}
+	}
+@media (min-width: 768px) and (max-width: 1199px)
+	{
+	.av-directories-list .letter-block                 {width: 50%}
+	.av-directories-list .letter-block:nth-child(2n+2) {padding-left:  0}
+	.av-directories-list .letter-block:nth-child(2n+3) {padding-right: 0}
+	}
+@media (max-width: 767px)
+	{
+	.av-directories-list .letter-block {padding-left: 0;padding-right: 0;width: 100%}
+	}

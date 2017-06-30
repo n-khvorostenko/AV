@@ -1,0 +1,25 @@
+.av-subscribe-form-line-popup-text b    {display: block}
+.av-subscribe-form-line-popup-text span {font-size: 87.5%}
+
+.av-subscribe-form-line                    {align-items: center;display: flex}
+.av-subscribe-form-line .title             {margin-right: 16px}
+.av-subscribe-form-line input[type=hidden] {display: none}
+.av-subscribe-form-line input
+	{
+	background: #FFF;
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	height: 35px;
+	padding: 0 7px;
+	width: 200px;
+	}
+.av-subscribe-form-line button
+	{
+	align-items: center;
+	border-top-left-radius:    0;
+	border-bottom-left-radius: 0;
+	display: flex;
+	height: 35px;
+	padding: 0 15px;
+	margin-left: -2px;
+	}

@@ -1,0 +1,4 @@
+.av-auth-alt                      {margin: auto;text-align: center;max-width: 550px}
+.av-auth-alt > *:not(:last-child) {margin-bottom: 26px}
+.av-auth-alt .title               {font-size: 137.5%;font-weight: bold}
+.av-auth-alt .buttons-cell > *    {width: 250px}

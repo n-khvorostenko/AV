@@ -1,0 +1,52 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu,
+.av-menu ul,
+.av-menu li        {padding: 0;margin: 0}
+.av-menu li:before {display: none !important}
+
+.av-menu .main-link,
+.av-menu .main-link:hover,
+.av-menu .main-link:active,
+.av-menu .main-link:focus,
+.av-menu .main-link:visited,
+.av-menu  .sub-link,
+.av-menu  .sub-link:hover,
+.av-menu  .sub-link:active,
+.av-menu  .sub-link:focus,
+.av-menu  .sub-link:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- menu ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu      {align-items: center;display: flex}
+.av-menu a    {display: block}
+.av-menu > li {padding-left: 12px}
+
+.av-menu .main-link:hover,
+.av-menu .main-link:active,
+.av-menu .main-link:focus,
+.av-menu  .sub-link:hover,
+.av-menu  .sub-link:active,
+.av-menu  .sub-link:focus,
+.av-menu .selected-item                        {color: #CC0000 !important}
+.av-menu  .sub-link:not(.selected-item):hover,
+.av-menu  .sub-link:not(.selected-item):active,
+.av-menu  .sub-link:not(.selected-item):focus  {text-decoration: underline}
+
+.av-menu .main-link            {cursor: pointer;font-weight: bold;white-space: nowrap}
+.av-menu  .sub-link            {overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.av-menu .sub-link.bottom-line {border-bottom: 1px solid #B6C0C6;padding-bottom: 12px;margin-bottom: 12px}
+
+.av-menu ul
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	display: none;
+	padding: 20px;
+	position: absolute;
+	max-width: 300px;
+	z-index: 300;
+	}
+.av-menu > li:hover > .main-link + ul       {display: block}
+.av-menu ul > li:not(:last-child) .sub-link {padding-bottom: 9px}

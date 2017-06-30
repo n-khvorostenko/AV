@@ -1,0 +1,20 @@
+.av-form-elements-def-alt-button
+	{
+	background: #B6C0C6;
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	padding: 7px 10px;
+	text-align: center;
+	text-decoration: none;
+	transition: .3s;
+	width: 100%;
+	}
+.av-form-elements-def-alt-button:hover,
+.av-form-elements-def-alt-button:active,
+.av-form-elements-def-alt-button:focus,
+.av-form-elements-def-alt-button:visited {color: #FFF;text-decoration: none}

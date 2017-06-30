@@ -1,0 +1,144 @@
+/* ------------------------------------------------------------------- */
+/* ----------------------------- очистка ----------------------------- */
+/* ------------------------------------------------------------------- */
+.av-form-wrap-4 input,
+.av-form-wrap-4 select,
+.av-form-wrap-4 textarea,
+.av-form-wrap-4 button
+	{
+	background-color: transparent;
+	border:  none;
+	outline: none;
+	padding: 0;
+	margin:  0;
+	border-radius: 4px;
+	}
+.av-form-wrap-4 form {background-color: none;border-radius: 0px 0px 4px 4px;}
+.av-form-wrap-4 .av-form-wrap{
+	width:100%;
+	background-color:transparent;
+	border-radius: 0px 0px 4px 4px;
+	border-bottom: 0px  ;
+	border-left: 0px ;
+	border-right: 0px;
+	color: #000;
+	}
+
+.av-form-wrap-4 input,.av-form-wrap-4 button,.av-form-wrap-4 select,.av-form-wrap-4 textarea {width: 100%;padding:8px 8px;}
+
+.av-form-wrap-4 label {width: 100%;font-weight: 200}
+
+.av-form-wrap-4 input[name="web_form_submit"] {
+	background-color: none;
+	border: 3px solid #FFF;
+	box-shadow: 0px 2px 9px #181818;
+
+	letter-spacing: 1px;
+	border-radius: 8px;
+	color: #fff;
+	margin: 15px;
+	padding: 8px 8px;
+	font-weight: bold;
+	width: auto;
+	transition: .3s;
+}
+
+.av-form-wrap-4 input[name="web_form_submit"]:hover {
+	background-color: #FF0000;
+	border: 3px solid #FF0000;
+	color: #FFF;
+	transition: .3s;
+}
+.av-form-wrap-4 #title-form-1 {
+	background-color: transparent !important;
+	border-bottom:none;
+	border-radius:0px;
+	color: #FFF;
+	padding: 0px;
+}
+
+
+.av-form-wrap-4 .inputtext{
+	border: 1px solid #d4d4d4;
+	background-color: #FFF;
+	box-shadow: 2px 2px 10px #181818;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #838383;
+	position: relative;
+	padding: 10px;
+	z-index: 3;
+}
+.av-form-wrap-4 #title-form-1 h3 {font-size: 25px;font-weight: bold;text-shadow: 1px 1px 0px #181818;color: #FFF;}
+.av-form-wrap-4 [fom-row] {width: 100%;margin: 10px auto;min-width: 200px;max-width: 400px;}
+@media (min-width: 992px){
+.av-form-wrap-4 [fom-row] {width: 100%;margin: 10px auto;min-width: 200px;}
+}
+
+.av-form-wrap-4 [title] {
+	display: block;
+	height: 0px;
+	color: #838383;
+	position: relative;
+	top: 33px;
+	left: 10px;
+	transition: .5s;
+	z-index: 10;
+}
+
+.av-form-wrap-4 [title][up] {
+	display: block;
+	color: #FFF;
+	height: 0px;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	top: 0px;
+	left: 10px;
+	transition: .5s
+}
+.av-form-wrap-4 [title][up-quick] {
+	display: block;
+	color: #FFF;
+	height: 0px;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	top: 0px;
+	left: 10px;
+	transition: 0s
+}
+.av-form-wrap-4 [security-text-form] {font-size:85%;opacity: .5;margin-top: 5px;}
+
+.av-form-wrap-4 div[required] span:after {
+	content:'*';
+	color: #CC0000;
+}
+.form-required {color: red;}
+
+.error-fld {
+	background-repeat: no-repeat;
+	background-image: url(images/icon_warn.gif);
+	display: block;
+	float: left;
+	height: 13px;
+	width: 15px;
+}
+.av-form-wrap-4 [form-input-error] {
+	background-color: transparent;
+	color: #FFF;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.av-form-wrap-4 [required]    input[form-error],
+.av-form-wrap-4 [required] textarea[form-error],
+.av-form-wrap-4 [required] checkbox[form-error],
+.av-form-wrap-4 [required]   select[form-error]{border-color:  #ff202a} 
+
+
+.av-form-wrap-4 .errortext {
+	color: #FFF !important;
+	display: block;
+	text-align: center;
+}

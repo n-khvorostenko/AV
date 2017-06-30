@@ -1,0 +1,18 @@
+.bx_sitemap_ul {display: none;}
+.catalog-main-wrap table span {color: red;}
+.catalog-main-wrap #catalog-img {
+width: 350px;
+height: 150px;
+display: inline-block;
+}
+.catalog-main-wrap table {width: 100%;}
+.catalog-main-wrap #catalog-btn {
+background-color: #FF202A;
+border-radius: 4px;
+color: #FFF;
+cursor: pointer;
+display: inline-block;
+padding: 5px 25px;
+margin-top: 10px;
+font-weight: bold;
+}

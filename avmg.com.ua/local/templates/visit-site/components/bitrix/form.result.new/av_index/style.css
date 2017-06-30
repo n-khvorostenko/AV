@@ -1,0 +1,24 @@
+.av-form-index form                   {display: flex;flex-wrap: wrap}
+.av-form-index .field-row.message,
+.av-form-index .field-row.message > * {height: 100%}
+
+.av-form-index-result-ok        {color: #B6C0C6;margin-top: 10px;text-align: center}
+.av-form-index .errors-block    {color: #CC0000;margin: 10px 0}
+.av-form-index .buttons-row     {width: 100%}
+.av-form-index .buttons-row > * {display: block;margin: 0 auto;width: 200px}
+
+@media (min-width: 992px)
+	{
+	.av-form-index .left-column,
+	.av-form-index .right-column {width: 50%}
+	.av-form-index .left-column  {padding-right: 40px}
+	.av-form-index .right-column {padding-left:  40px}
+	.av-form-index .buttons-row  {margin-top:    52px}
+	}
+@media (max-width: 991px)
+	{
+	.av-form-index .left-column,
+	.av-form-index .right-column {width: 100%}
+	.av-form-index .right-column,
+	.av-form-index .buttons-row  {margin-top: 26px}
+	}

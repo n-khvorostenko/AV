@@ -1,0 +1,14 @@
+.av-subscribe-form-popup-text b    {display: block}
+.av-subscribe-form-popup-text span {font-size: 87.5%}
+
+.av-subscribe-form                    {display: flex;flex-direction: column}
+.av-subscribe-form > *                {width: 100%;height: 35px}
+.av-subscribe-form .title             {margin-bottom: 13px;text-align: center}
+.av-subscribe-form input[type=hidden] {display: none}
+.av-subscribe-form input,
+.av-subscribe-form button             {padding: 0 7px}
+.av-subscribe-form input              {background: #FFF;border: 1px solid #B6C0C6;border-radius: 2px;margin-bottom: 7px}
+
+.av-subscribe-form input::-webkit-input-placeholder {text-align: center}
+.av-subscribe-form input::-moz-placeholder          {text-align: center}
+.av-subscribe-form input:-ms-input-placeholder      {text-align: center}

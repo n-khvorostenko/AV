@@ -1,0 +1,23 @@
+.av-contacts-page-block > p > b > a       {color: inherit}
+.av-contacts-page-block > p > b > a:hover,
+.av-contacts-page-block > p > b > a:active,
+.av-contacts-page-block > p > b > a:focus {color: #CC0000}
+
+@media (min-width: 992px)
+	{
+	.av-contacts-page-block.first-column  {padding-right: 40px}
+	.av-contacts-page-block.second-column {padding-left:  40px;padding-right: 40px}
+	.av-contacts-page-block.third-column  {padding-left:  40px}
+	}
+@media (min-width: 768px)
+	{
+	.av-contacts-page-block.first-column {padding-right: 40px}
+	.av-contacts-page-block.second-column,
+	.av-contacts-page-block.third-column {padding-left:  40px}
+	}
+@media (max-width: 767px)
+	{
+	.av-contacts-page-block > p,
+	.av-contacts-page-block > h3 {text-align: center}
+	.av-contacts-page-block.first-column {padding-bottom: 26px}
+	}

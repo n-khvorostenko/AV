@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-av_site_alt-select a,
+.av-form-elements-av_site_alt-select a:hover,
+.av-form-elements-av_site_alt-select a:focus,
+.av-form-elements-av_site_alt-select a:active,
+.av-form-elements-av_site_alt-select a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- label ------------------------------ */
+/* -------------------------------------------------------------------- */
+.av-form-elements-av_site_alt-select
+	{
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	cursor: pointer;
+	}
+.av-form-elements-av_site_alt-select.active,
+.av-form-elements-av_site_alt-select:hover,
+.av-form-elements-av_site_alt-select:focus,
+.av-form-elements-av_site_alt-select:active {border-color: #868B8D}
+
+.av-form-elements-av_site_alt-select .title
+	{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 3px 12px 10px;
+	}
+.av-form-elements-av_site_alt-select .title > *:nth-child(1)
+	{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-av_site_alt-select .title > *:nth-child(2)
+	{
+	background: url(images/form_select_arrow.png) center center no-repeat;
+	background-size: cover;
+	transition: .3s;
+	width:  24px;
+	height: 24px;
+	}
+.av-form-elements-av_site_alt-select.active .title > *:nth-child(2) {transform: rotate(-180deg)}
+/* -------------------------------------------------------------------- */
+/* -------------------------- drop-down menu -------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-av_site_alt-select .list
+	{
+	background: #FAFAFA;
+	border-right:  1px solid #868B8D;
+	border-bottom: 1px solid #868B8D;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius:  2px;
+	display: none;
+	max-height: 200px;
+	margin: -1px 0 0 -1px;
+	position: absolute;
+	z-index: 10;
+	}
+.av-form-elements-av_site_alt-select .list .list-item
+	{
+	border-left: 1px solid #868B8D;
+	display: block;
+	overflow: hidden;
+	padding: 12px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-elements-av_site_alt-select .list .list-item:hover,
+.av-form-elements-av_site_alt-select .list .list-item:focus,
+.av-form-elements-av_site_alt-select .list .list-item:active,
+.av-form-elements-av_site_alt-select .list .list-item.selected
+	{
+	background: #4C5255;
+	border-color: #4C5255;
+	color: #FFF;
+	}

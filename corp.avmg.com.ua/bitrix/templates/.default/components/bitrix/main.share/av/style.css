@@ -1,0 +1,8 @@
+.av-share-block                      {display: flex}
+.av-share-block > a                  {background: center center no-repeat;width:  32px;height: 32px}
+.av-share-block > a:not(:last-child) {margin-right: 10px}
+
+.av-share-block > a.facebook    {background-image: url(images/facebook.svg)}
+.av-share-block > a.google-plus {background-image: url(images/google.svg)}
+.av-share-block > a.twitter     {background-image: url(images/twitter.svg)}
+.av-share-block > a.vk          {background-image: url(images/vk.svg)}

@@ -1,0 +1,97 @@
+@media (min-width: 991px ) {
+.av-center-cetalog .slick-list,
+.av-center-cetalog .slick-track {width: 100%;}
+}
+
+.av-center-cetalog span[name],
+.av-alert-popup span[name] {
+font-size: 22px;
+font-weight: bold;
+margin-top: 13px;
+display: inline-block;
+color: #414042;
+}
+
+#catalog-btn,
+.av-alert-popup #catalog-btn {
+background-color: #ff202a;
+border: 1px solid #CC0000;
+border-radius: 4px;
+color: #fff;
+margin: 15px auto;
+padding: 5px 5px;
+font-weight: bold;
+transition: .3s;
+width: 140px;
+}
+#catalog-btn:hover,
+.av-alert-popup #catalog-btn:hover {
+background-color: #CB2027;
+color: #FFF;
+cursor: pointer !important;
+transition: .3s;
+}
+.av-alert-popup [close-form4] {
+background: url(/upload/av_site/landings/av-steel/cross_white.svg) no-repeat;
+background-size: cover;
+cursor: pointer !important;
+opacity: 1;
+width: 20px;
+height: 20px;
+position: absolute;
+right: 0px;
+top: -26px;
+}
+.av-alert-popup #catalog-img {height: 110px !important;background-size: contain !important;}
+
+.av-center-cetalog .slick-cloned .catalog-btn {
+background-color: #ff202a;
+border: 1px solid #CC0000;
+border-radius: 4px;
+color: #fff;
+margin: 15px auto;
+padding: 5px 5px;
+font-weight: bold;
+transition: .3s;
+width: 140px;
+}
+#catalog-form-wrap .av-form-wrap-2 {
+border: none;
+border-left: 3px dashed #FF202A !important;
+border-right: 3px dashed #FF202A !important;
+border-bottom: 3px dashed #FF202A !important;
+border-radius: 0px 0px 6px 6px;
+}
+#catalog-form-wrap #title-form-1 {
+background-color: #FFF;
+border-left: 3px dashed #FF202A !important;
+border-right: 3px dashed #FF202A !important;
+border-top: 3px dashed #FF202A !important;
+border-radius: 6px 6px 0px 0px;
+margin-top: 20px;
+margin-left: 20px;
+}
+form[name="av_steel_catalog_order"] {margin-left: 20px}
+#catalog-form-wrap #title-form-1 span {
+font-size: 16px;
+}
+
+@media (max-width: 992px) {
+form[name="av_steel_catalog_order"],
+#catalog-form-wrap #title-form-1 {margin-left: 0px}
+}
+
+#alertpopup4 {width: 60%;}
+
+@media (max-width: 600px) {
+#alertpopup4 {width: 85%;}
+}
+#alertpopup4 table {margin-bottom: 15px;}
+.av-steel-catalog-wrap table {width: 100%;}
+
+.av-steel-catalog-wrap #catalog-img {margin: 0 auto}
+@media (max-width: 768px ) {
+.av-steel-catalog-wrap {border: 1px solid #e3e3e3; border-radius: 3px}
+}
+#alertpopup4 .av-steel-catalog-wrap {border: none; border-radius: 3px;margin-bottom: 15px;}
+

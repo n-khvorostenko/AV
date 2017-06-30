@@ -1,0 +1,13 @@
+.av-form-elements-element-search
+	{
+	background: #FFF url(images/search_icon.png) calc(100% - 6px) center no-repeat;
+	background-size: 18px;
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	display: block;
+	margin: 0;
+	padding: 12px 10px;
+	width: 100%;
+	}
+.av-form-elements-element-search:hover,
+.av-form-elements-element-search:focus {border-color: #868B8D}

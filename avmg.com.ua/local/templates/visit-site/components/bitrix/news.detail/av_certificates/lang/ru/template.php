@@ -1,0 +1,4 @@
+<?
+$MESS["AV_CERTIFICATES_DETAIL_CLOSE"]  = 'закрыть';
+$MESS["AV_CERTIFICATES_DETAIL_UPLOAD"] = 'скачать';
+?>

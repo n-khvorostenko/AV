@@ -1,0 +1,6 @@
+.av-vs-blog-wrap .blog-posts-content {
+display: flex;
+flex-wrap: wrap;
+}
+.av-vs-blog-wrap .blog-post-edit-form {display: inline-block;}
+.av-vs-blog-wrap .blog-post {height: 400px;}

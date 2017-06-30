@@ -1,0 +1,682 @@
+h2,h1 {font-weight: bold;}
+
+body {overflow: hidden;}
+
+.col-md-6,.row {
+	margin: 0px;
+	padding: 0px;
+}
+
+.imageClass {width: 100%}
+.desctopeWrap,
+.mobileWrap {display: none}
+#markerWorkPlace {
+	display: block;
+	width: 30px;
+	float: left;
+	margin: auto;
+	height: 100%;
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+@media (min-width: 1025px) {.desctopeWrap {display: block};}
+@media (max-width: 1024px) {.mobileWrap   {display: block}; .desctopeWrap {display: none}}
+@media (min-width: 1920px) {
+
+	#img1 {
+		background: url(/upload/av_site/landings/av-shpola/4-min.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#img2 {
+		background: url(/upload/av_site/landings/av-shpola/1-min.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+
+	#img4 {
+		background: url(/upload/av_site/landings/av-shpola/2-min.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#img5 {
+		background: url(/upload/av_site/landings/av-shpola/3-min.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.img6 {
+		background: url(/upload/av_site/landings/av-shpola/Shpola_Location.jpg);
+		background-size: contain;height: 100% !important;
+	}
+}
+/*
+@media (max-width: 1919px) {
+	.desctopeWrap .conta {
+		background: url(/upload/av_site/landings/av-shpola/fon_shpola-min-1024.jpg) center bottom no-repeat !important;
+		background-size: cover !important;
+	}
+	#img1 {
+		background: url(/upload/av_site/landings/av-shpola/5-min-1024.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#img2 {
+		background: url(/upload/av_site/landings/av-shpola/2-min-1024.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+
+	#img4 {
+		background: url(/upload/av_site/landings/av-shpola/3-min-1024.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#img5 {
+		background: url(/upload/av_site/landings/av-shpola/4-min-1024.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+.img6 {
+	background: url(/upload/av_site/landings/av-shpola/Shpola_Location-1024.jpg);
+	background-size: contain;height: 100% !important;
+}
+}
+*/
+.img6 .sliderText {
+	color: #333;
+	border: none;
+	width: 380px;
+	opacity: 1 !important;
+	right: 100%;
+
+}
+
+.img6 .sliderText div {
+	border: 2px solid #333;
+	margin: 10px 0px;
+	padding: 5px 10px;
+}
+.img6.slick-current .sliderText  {
+	right: 5% !important;
+	transition: .4s;
+	/* Задержка перед началом */
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation: example 1s ease ;
+	animation: example 1s ease ;
+}
+
+@keyframes example {
+	0%   {right: 100% }
+	100% {right: 5%   }
+}
+@keyframes example2 {
+	0%   {right: 5% }
+	100% {right: 100%   }
+}
+#socialImg {border: 0px;}
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+.slick-track > div {border: 0px !important}
+
+img {width: 100%}
+
+.carusel1 {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+}
+
+.carusel2 {
+	position: absolute;
+	top: -100%;
+	right: 0px;
+}
+
+.carusel1.active,.carusel2.active {top: 0px;}
+
+.carusel1.false {
+	-webkit-animation: example3 .5s ease;
+	animation: example3 .5s ease;
+}
+
+.carusel2.false {
+	-webkit-animation: example4 .5s ease;
+	animation: example4 .5s ease;
+}
+
+@keyframes example1 {
+	0% {
+		position: absolute;
+		top: 100%;
+		left: 0px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+@keyframes example2 {
+	0% {
+		position: absolute;
+		top: -100%;
+		right: 0px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+@keyframes example3 {
+	0% {
+		position: absolute;
+		top: 0%;
+		left: 0px;
+	}
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes example4 {
+	0% {
+		position: absolute;
+		top: 0%;
+		right: 0px;
+		trasition: 3s;
+	}
+	100% {
+		top: -100%;
+	}
+}
+.carusel1.active {
+	-webkit-animation: example1 .7s ease 1;
+	animation: example1 .7s ease 1;
+}
+
+.carusel2.active {
+	-webkit-animation: example2 .7s ease 1;
+	animation: example2 .7s ease 1;
+}
+
+.single-item1 > div:hover .imageClass,
+.single-item2 > div:hover .imageClass {
+	filter: brightness(30%) !important;
+	-webkit-filter: brightness(30%) !important;
+	-ms-filter: brightness(30%) !important;
+	transition: .4s;
+}
+
+.sliderText {
+	opacity: 0;
+	position: absolute;
+	color: #FFF;
+	z-index: 1;
+	width: 350px;
+	border: 2px solid #FFF;
+	transition: .4s;
+	padding: 12px;
+}
+.sliderText p{font-size: 20px;}
+.workPlaseText {
+	font-size: 20px;
+	text-align: left;
+	width: 73%;
+	margin: 0 auto;
+	display: inline-block;
+}
+.workPlaseText span{
+	font-size: 16px;
+}
+.single-item1 > div:hover .sliderText,
+.single-item2 > div:hover .sliderText {
+	filter: brightness(100%) !important;
+	-ms-filter: brightness(100%) !important;
+	-webkit-filter: brightness(100%) !important;
+	opacity: 1;
+	transition: .4s;
+}
+
+.sliderTextRight {left: 5%}
+
+.sliderTextLeft {right: 5%}
+
+.single-item2 > div:hover .imageClassMap,
+.single-item1 > div:hover .imageClassMap {
+	filter: brightness(100%) !important;
+	-webkit-filter: brightness(100%) !important;
+	-ms-filter: brightness(100%) !important;
+}
+
+#pageIndicator {
+	z-index: 999;
+	position: fixed;
+	right: 0px;
+	bottom: 25%;
+}
+#pageIndicator.red > div {
+	background-color: #f00;
+	transition: .4s;
+}
+#pageIndicator.red > div span {
+	color: #f00;
+	transition: .4s;
+}
+#pageIndicator > div {
+	width: 40px;
+	height: 6px;
+	background-color: #FFF;
+	margin: 10px 0px;
+	transition: .4s;
+}
+
+#pageIndicator > div span {
+	float: left;
+	display: none;
+	position: relative;
+	top: -18px;
+	color: #FFF;
+	font-weight: bold;
+	transition: .4s;
+}
+
+#pageIndicator .active {
+	width: 60px;
+	margin-left: -20px;
+	transition: .4s;
+}
+
+#pageIndicator > div.active span {
+	display: inline;
+	transition: .4s;
+}
+
+.textWrap img {
+	width: 115px;
+	margin-top: -25px;
+}
+
+.logoTextWrap {
+	padding: 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.secondWrapBG {
+	width: 800px;
+	min-height: 600px;
+	margin: auto;
+	background: url(/upload/av_site/landings/av-shpola/shpola_fon_h1.png) no-repeat center;
+	background-size: contain;
+}
+
+.textWrap {
+	position: relative;
+	top: 135px;
+	width: 78%;
+	margin: auto;
+}
+
+.red-text {color: red;}
+
+.textWrap h1 {
+	font-size: 35px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+}
+.textWrap p {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.textWrap .red-btn {
+	width: 160px;
+	display: inline-block;
+	background-color: red;
+	border-radius: 4px;
+	padding: 5px 20px;
+	margin: 0px 10px;
+	color: #FFF;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.slick-prev,
+.slick-next {display: none !important;}
+
+@media (max-width: 1024px) {
+	.mobileWrap .sliderText {
+		opacity: 1 !important;
+		left: 0;
+		right: 0;
+		display: block;
+		margin: 0 auto;
+		width: 75%;
+	}
+	.textWrap .red-btn {
+		width: 105px;
+		padding: 6px 1px !important;
+		font-size: 11px;
+		margin: 0px 6px;
+	}
+	.mobileWrap .textWrap h1 {
+		font-size: 27px;
+		margin-top: 13px;
+	}
+	.textWrap {top: 84px;width: 65%;}
+	.mobileWrap .imageClass {
+		-webkit-filter: brightness(30%);
+		-moz-filter: brightness(30%);
+		-o-filter:  brightness(30%);
+		-ms-filter:  brightness(30%);
+
+	}
+	.mobileWrap .secondWrapBG {
+		width: 90%;
+		max-width: 600px;
+		margin: auto;
+		background: url(/upload/av_site/landings/av-shpola/shpola_fon_h1Text_Mobile.png) no-repeat center;
+		background-size: contain;
+	}
+
+	.mobileWrap #mapText div{padding:0px}
+	.mobileWrap #mapText table{width: 100% !important}
+	.mobileWrap  #mapText p{
+		font-size: 18px;
+		text-align: center;
+	}
+	h2, .h2 {
+		font-size: 18px;
+		margin: 5px 0px;
+	}
+	.mobileWrap .conta {
+		background: url(/upload/av_site/landings/av-shpola/Shpola_mobile_fon.jpg) center bottom no-repeat !important;
+		background-size: cover !important;
+	}
+	.mobileWrap #img1 {
+		background: url(/upload/av_site/landings/av-shpola/shpola_mobile-3.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.mobileWrap #img2 {
+		background: url(/upload/av_site/landings/av-shpola/shpola_mobile-4.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.mobileWrap #img4 {
+		background: url(/upload/av_site/landings/av-shpola/shpola_mobile-1.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.mobileWrap #img5 {
+		background: url(/upload/av_site/landings/av-shpola/shpola_mobile-2.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.mobileWrap #map_canvas2 {
+		filter: brightness(100%) !important;
+		-webkit-filter: brightness(100%) !important;
+		-ms-filter: brightness(100%) !important;
+		width: 100%;
+	}
+	.mobileWrap #mapText {
+		z-index: 9;
+		background: url(/upload/av_site/landings/av-shpola/Shpola_Location_Mobile.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.mobileWrap #socialImg {
+		text-align: center;
+		bottom: 0px;
+		position: relative !important;
+		background-color: #FFF;
+		width: 100%;
+		left: 0px;
+	}
+	.mobileWrap #socialImg h3{
+		font-size: 16px;
+	}
+	.mobileWrap #socialImg svg {
+		width: 44px;
+		height: 44px;
+		display: inline-block;
+	}
+	.mobileWrap th {text-align: center;}
+
+	.mobileWrap .containerArrow {bottom: inherit;}
+	.mobileWrap .circle {
+		animation-name: none !important;
+		-webkit-animation-name: none;
+		bottom: 30px;
+		width:  45px !important;
+		height: 45px !important;
+		border: 2px solid #FFF;
+	}
+	.mobileWrap .fa {
+		bottom: 6px;
+		animation-name: none;
+		-webkit-animation-name: none;
+	}
+	@media (max-width: 450px) {.mobileWrap .sliderText p {font-size: 14px !important}}
+}
+
+.mobileWrap .textWrap img {margin: auto;}
+@media (max-width: 500px) {
+	.mobileWrap .textWrap h1  {font-size: 30px;}
+	.mobileWrap .textWrap img {width: 110px;}
+	.mobileWrap .textWrap     {top: 100px;}
+	.mobileWrap .textWrap p   {font-size: 15px;}
+	.textWrap {width: 80%;}
+}
+@media (max-width: 450px) {
+	.mobileWrap .textWrap h1  {font-size: 25px;}
+	.mobileWrap .textWrap img {width: 80px;}
+	.mobileWrap .textWrap     {top: 130px;}
+	.mobileWrap .textWrap p   {font-size: 14px;}
+	.textWrap {width: 80%;}
+}
+@media (max-width: 400px) {
+	.mobileWrap .textWrap h1  {font-size: 20px;}
+	.mobileWrap .textWrap img {width: 70px;}
+	.mobileWrap .textWrap     {top: 140px;}
+	.mobileWrap .textWrap p   {font-size: 14px;}
+	.textWrap {width: 80%;}
+}
+@media (max-width: 360px) {
+	.mobileWrap .textWrap h1  {font-size: 18px;}
+	.mobileWrap .textWrap img {width: 70px;}
+	.mobileWrap .textWrap     {top: 160px;}
+	.mobileWrap .textWrap p   {font-size: 13px;}
+	.textWrap {width: 80%;}
+	.textWrap .red-btn {width: 95px;}
+}
+.textWrap .red-btn {padding: 5px 16px;}
+
+td {font-size: 16px;}
+
+#socialImg svg {
+	width: 74px;
+	height: 74px;
+	display: inline-block;
+}
+#socialImg svg path{ fill: #333;transition: .4s;}
+#socialImg {text-align: center;}
+#socialImg a:hover {text-decoration: none;}
+#socialImg a:hover svg path{ fill: #ff0000;transition: .4s;}
+.gmnoprint {z-index: 9999999;}
+
+* {
+	box-sizing: border-box;
+}
+.containerArrow {
+	height: 6px;
+	width: 60px;
+	margin: auto;
+	position: relative;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 3%;
+	padding-right: 0px;
+	padding-left: 0px;
+	transition: .4s;
+	cursor: pointer;
+	z-index: 999999999999;
+}
+.circle {
+	background-color: transparent;
+	height: 60px;
+	width: 60px;
+	display: block;
+	border: 3px solid #FFF;
+	border-radius: 100px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	animation-name:circle;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-play-state:running;
+	-webkit-animation-name:circle;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:running;
+}
+.fa {
+	font-size: 28px;
+	color: #FFF;
+	bottom: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -13px;
+	animation-name:arrow;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	animation-play-state:running;
+	-webkit-animation-name:arrow;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:running;
+	transition: .4s;
+}
+
+@keyframes arrow
+{
+	0%   {bottom:0;}
+	75% {bottom:90px;}
+	100% {bottom:0;}
+}
+@-webkit-keyframes arrow
+{
+	0%   {bottom:0;}
+	75% {bottom:90px;}
+	100% {bottom:0;}
+}
+@keyframes circle
+{
+	0%   {height:110px;}
+	10% {height: 110px;}
+	50% {height: 120px;}
+	75% {height: 130px;}
+	90% {height: 120px;}
+	100% {height: 110px;}
+}
+@-webkit-keyframes circle
+{
+	0%   {height:110px;}
+	10% {height: 110px;}
+	50% {height: 120px;}
+	75% {height: 130px;}
+	90% {height: 120px;}
+	100% {height: 110px;}
+}
+
+.containerArrow.up {
+	transform: rotate(180deg);
+	bottom: 15%;
+}
+.containerArrow.up .circle{
+	border: 5px solid red; transition: .4s;
+}
+.containerArrow.up .fa {
+	color: red;
+	transition: .4s;
+}
+
+@media screen and ( max-height: 700px ){
+	.circle {
+		width: 48px;
+		border: 2px solid #FFF ;
+	}
+	.containerArrow.up .circle{
+		border: 3px solid red; transition: .4s;
+	}
+	.sliderText p {
+		font-size: 16px;
+	}
+	@keyframes circle
+	{
+		0%   {height:70px;}
+		50% {height: 80px;}
+		75% {height: 90px;}
+		90% {height: 80px;}
+		100% {height: 70px;}
+	}
+	@-webkit-keyframes circle
+	{
+		0%   {height:70px;}
+		50% {height: 80px;}
+		75% {height: 90px;}
+		90% {height: 80px;}
+		100% {height: 70px;}
+	}
+	@keyframes arrow
+	{
+		0%   {bottom:0;}
+		75% {bottom:50px;}
+		100% {bottom:0;}
+	}
+	@-webkit-keyframes arrow
+	{
+		0%   {bottom:0;}
+		75% {bottom:50px;}
+		100% {bottom:0;}
+	}
+	.containerArrow {
+		bottom: 1%;
+		width: 48px;
+	}
+}
+#map_canvas {
+	background-color: #FFF;
+}
+
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+	.sliderText {
+		box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.7) !important;
+		background-color: rgba(0,0,0,0.7) !important;
+	}
+	.img6 .sliderText {
+		box-shadow: none !important;
+		background-color: inherit !important;
+	}
+
+}

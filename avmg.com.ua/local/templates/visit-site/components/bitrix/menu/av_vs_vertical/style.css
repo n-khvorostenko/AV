@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-vertical,
+.av-menu-vertical ul,
+.av-menu-vertical li        {padding: 0;margin: 0}
+.av-menu-vertical li:before {display: none !important}
+
+.av-menu-vertical a,
+.av-menu-vertical a:hover,
+.av-menu-vertical a:active,
+.av-menu-vertical a:focus,
+.av-menu-vertical a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- menu ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-menu-vertical:not(last-child) {margin-bottom: 52px}
+
+.av-menu-vertical .main-link
+	{
+	background: url(images/arrow.png) center right no-repeat;
+	background-size: 24px;
+	display: block;
+	padding: 12px 24px 12px 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+
+.av-menu-vertical .main-link:hover,
+.av-menu-vertical .main-link:focus,
+.av-menu-vertical .selected-item                        {color: #CC0000}
+.av-menu-vertical .main-link:not(.selected-item):hover,
+.av-menu-vertical .main-link:not(.selected-item):focus,
+.av-menu-vertical .main-link:not(.selected-item):active {box-shadow: 0 2px 4px rgba(76, 82, 85, 0.25)}
+.av-menu-vertical .main-link:not(.selected-item):active {background: #CC0000 url(images/arrow_active.png) center right no-repeat;color: #FFF}
+
+.av-menu-vertical li:not(:last-child) .main-link        {border-bottom: 1px solid #B6C0C6}
+.av-menu-vertical .main-link.bottom-line,
+.av-menu-vertical .main-link:not(.selected-item):active {border-color: #CC0000 !important}

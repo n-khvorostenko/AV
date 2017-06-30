@@ -1,0 +1,13 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-career .validation-info           {padding: 0;margin: 0}
+.av-form-career .validation-info li:before {display: none !important}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-career-result-ok                    {color: #B6C0C6;margin-top: 10px;text-align: center}
+.av-form-career .errors-block                {color: #CC0000;margin-bottom: 10px}
+.av-form-career .field-row                   {margin-bottom: 26px}
+.av-form-career .comments-field.hidden-field {display: none}
+.av-form-career .validation-info             {color: #A7A7A7;font-size: 68.75%;line-height: 150%;margin-top: 6px}

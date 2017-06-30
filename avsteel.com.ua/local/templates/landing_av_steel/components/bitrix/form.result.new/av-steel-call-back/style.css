@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------------- */
+/* ----------------------------- очистка ----------------------------- */
+/* ------------------------------------------------------------------- */
+.av-form-wrap-2 input,
+.av-form-wrap-2 select,
+.av-form-wrap-2 textarea,
+.av-form-wrap-2 button
+{
+background-color: transparent;
+border:  none;
+outline: none;
+padding: 0;
+margin:  0;
+border-radius: 4px;
+}
+form[name="av_steel_form_callBack"] {box-shadow: 0px 3px 0px #d2d1d1, 0px 6px #a5a5a5;
+    border-radius: 8px;}
+.av-form-wrap-2{
+width:100%;
+background-color:white;
+border-radius: 0px 0px 4px 4px;
+border-bottom: 1px solid #D0D0D0;
+border-left: 1px solid #D0D0D0;
+border-right: 1px solid #D0D0D0;
+color: #000;
+}
+
+.av-form-wrap-2 input,.av-form-wrap-2 button,.av-form-wrap-2 select,.av-form-wrap-2 textarea {width: 100%;padding:8px 8px;}
+
+.av-form-wrap-2 label {width: 100%;font-weight: 200}
+
+.av-form-wrap-2 input[name="web_form_submit"] {
+background-color: #ff202a;
+border: 1px solid #CC0000;
+border-radius: 4px;
+color: #fff;
+margin: 15px;
+padding: 8px 8px;
+font-weight: bold;
+width: auto;
+transition: .3s;
+}
+
+.av-form-wrap-2 input[name="web_form_submit"]:hover {
+background-color: #CB2027;
+color: #FFF;
+transition: .3s;
+}
+#title-form-1 {
+background-color: #ff202a;
+border-bottom:none;
+border-radius: 4px 4px 0px 0px;
+color: #FFF;
+padding: 10px 10px;
+}
+#title-form-1 p {margin: 0px;font-size: 14px;}
+
+.av-form-wrap-2 .inputtext{
+border: 2px solid #d4d4d4;
+margin-top: 20px;
+font-size: 16px;
+position: relative;
+z-index: 9;ASD
+}
+#title-form-1 span {font-size: 20px;font-weight: bold}
+.av-form-wrap-2 [fom-row] {width: 90%;margin: 0 auto}
+.av-form-wrap-2 [title] {
+display: block;
+height: 0px;
+position: relative;
+top: 30px;
+left: 10px;
+opacity: 0.5;
+transition: .5s
+}
+
+.av-form-wrap-2 [title][up] {
+display: block;
+height: 0px;
+position: relative;
+font-size: 14px;
+top: 0px;
+left: 10px;
+opacity: 0.5;
+transition: .5s
+}
+
+.av-form-wrap-2 [security-text-form] {font-size:85%;opacity: .5;margin-top: 5px;}
+
+.av-form-wrap-2 div[required] span:after {
+content:'*';
+color: #CC0000;
+}
+.form-required {color: red;}
+
+.error-fld {
+background-repeat: no-repeat;
+background-image: url(images/icon_warn.gif);
+display: block;
+float: left;
+height: 13px;
+width: 15px;
+}
+[form-input-error-123] {
+display:none;
+}
+[form-input-error-123].show {
+z-index: 99;
+color: #000;
+text-align: center;
+width: 100%;
+display: block;}
+.av-form-wrap-2 [required]    input[form-error],
+.av-form-wrap-2 [required] textarea[form-error],
+.av-form-wrap-2 [required] checkbox[form-error],
+.av-form-wrap-2 [required]   select[form-error]{border-color:  #ff202a} 
+
+

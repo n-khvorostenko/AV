@@ -1,0 +1,7 @@
+.av-parthners-page-separator {border-top: 1px solid #B6C0C6;padding-top: 26px}
+
+@media (min-width: 992px)
+	{
+	.av-parthners-page-block.first-column  {padding-right: 40px;margin-bottom: 26px}
+	.av-parthners-page-block.second-column {padding-left:  40px;margin-bottom: 26px}
+	}

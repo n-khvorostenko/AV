@@ -1,0 +1,14 @@
+.av-soc-auth-form > .call-button
+	{
+	background: center center no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	width:  32px;
+	height: 32px
+	}
+.av-soc-auth-form > .call-button:not(:last-child) {margin-right: 10px}
+
+.av-soc-auth-form > .call-button.facebook    {background-image: url(images/facebook.svg)}
+.av-soc-auth-form > .call-button.google-plus {background-image: url(images/google.svg)}
+.av-soc-auth-form > .call-button.twitter     {background-image: url(images/twitter.svg)}
+.av-soc-auth-form > .call-button.vk          {background-image: url(images/vk.svg)}

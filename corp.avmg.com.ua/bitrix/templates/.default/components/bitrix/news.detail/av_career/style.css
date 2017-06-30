@@ -1,0 +1,52 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-career-detail .info-cell > table,
+.av-career-detail .info-cell > table td,
+.av-career-detail .info-cell > table th
+	{
+	border: none;
+	font-size: 100%;
+	font-weight: normal;
+	padding: 0;
+	margin:  0;
+	text-align: left;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-career-detail                               {margin-bottom: -52px}
+.av-career-detail > *                           {margin-bottom:  52px}
+.av-career-detail .buttons-cell                 {text-align: center}
+
+.av-career-detail .info-cell > table td,
+.av-career-detail .info-cell > table th         {font-size: 87.5%}
+.av-career-detail .info-cell > table th         {padding-right: 12px}
+.av-career-detail .info-cell .share-block-title {font-weight: bold;margin: 13px 0}
+
+.av-career-detail .form-cell .support-text      {border-top: 1px solid #B6C0C6;margin-top: 52px;padding-top: 13px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 992px)
+	{
+	.av-career-detail               {align-items: flex-start;display: flex;flex-wrap: wrap}
+	.av-career-detail > *           {width: 100%}
+	.av-career-detail .info-cell,
+	.av-career-detail .detail-image,
+	.av-career-detail .descr-cell,
+	.av-career-detail .form-cell    {width: calc(50% - 40px)}
+	.av-career-detail .info-cell,
+	.av-career-detail .descr-cell   {margin-right: 80px}
+	}
+@media (max-width: 991px)
+	{
+	.av-career-detail                     {display: flex;flex-direction: column}
+	.av-career-detail > *                 {width: 100%}
+	.av-career-detail .detail-image       {order: 1}
+	.av-career-detail .info-cell          {order: 2}
+	.av-career-detail .descr-cell         {order: 3}
+	.av-career-detail .buttons-cell       {order: 4}
+	.av-career-detail .form-cell          {order: 5}
+	.av-career-detail .same-articles-cell {order: 6}
+	}

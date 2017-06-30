@@ -1,0 +1,144 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------ header ------------------------------ */
+/* -------------------------------------------------------------------- */
+#av-vst header
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	letter-spacing: 1px;
+	width: 100%;
+	z-index: 200;
+	}
+#av-vst header.fixed                   {position: fixed;top: 0}
+#av-vst header.fixed .mobile-first-row {display: none}
+/* ------------------------------------------- */
+/* ----------------- desktop ----------------- */
+/* ------------------------------------------- */
+#av-vst header .desktop-left-col,
+#av-vst header .desktop-right-col {display: flex;height: 105px;padding: 12px 0}
+#av-vst header .desktop-left-col  {align-items: center}
+#av-vst header .desktop-right-col {align-items: flex-end;flex-direction: column;justify-content: space-between}
+
+#av-vst header .desktop-gadgets-row
+	{
+	color: #78909C;
+	display: flex;
+	font-size: 75%;
+	justify-content: flex-end;
+	}
+#av-vst header .desktop-gadgets-row > *                  {padding-left: 12px}
+#av-vst header .desktop-gadgets-row > *:not(:last-child) {border-right: 1px solid #B6C0C6;padding-right: 12px}
+
+#av-vst header .desktop-phone-cell  > a       {align-items: center;color: #78909C;display: flex}
+#av-vst header .desktop-phone-cell  > a:hover,
+#av-vst header .desktop-phone-cell  > a:active,
+#av-vst header .desktop-phone-cell  > a:focus {color: #CC0000}
+#av-vst header .desktop-phone-cell  > a img   {margin-right: 3px}
+/* ------------------------------------------- */
+/* ----------------- mobile ------------------ */
+/* ------------------------------------------- */
+#av-vst header .mobile-first-row
+	{
+	background: #FAFAFA;
+	border-bottom: 1px solid #F5F5F5;
+	color: #78909C;
+	display: flex;
+	font-size: 80%;
+	justify-content: center;
+	padding-top: 2px;
+	}
+#av-vst header .mobile-first-row a       {align-items: center;color: #78909C;display: flex}
+#av-vst header .mobile-first-row a:hover,
+#av-vst header .mobile-first-row a:active,
+#av-vst header .mobile-first-row a:focus {color: #CC0000}
+
+#av-vst header .mobile-second-row                  {align-items: center;display: flex;justify-content: space-between}
+#av-vst header .mobile-second-row > *:nth-child(1) {margin-left:  -15px}
+#av-vst header .mobile-second-row > *:nth-child(3) {margin-right: -15px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- body ------------------------------- */
+/* -------------------------------------------------------------------- */
+#av-vst .page-main-title
+	{
+	align-items: center;
+	background: url(images/h1_bg.jpg) center center no-repeat;
+	background-size: cover;
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+	margin:  0;
+	padding: 0 20px;
+	text-align: center;
+	}
+
+#av-vst .page-breadcrumbs                                  {margin: -13px 0 13px 0}
+#av-vst .page-workarea                                     {min-height: 600px}
+#av-vst .page-workarea:not(.full_screen_page)              {padding-top: 26px;padding-bottom: 78px}
+#av-vst .page-workarea.left_menu_page .left-column .bottom {margin-top: 52px}
+
+@media (min-width: 992px)
+	{
+	#av-vst .page-main-title                            {height: 130px}
+	#av-vst .page-workarea.left_menu_page .left-column  {border-right: 1px solid #ECEFF1;padding-right: 65px}
+	#av-vst .page-workarea.left_menu_page .right-column {border-left:  1px solid #ECEFF1;padding-left:  65px;margin-left: -1px}
+	}
+@media (max-width: 991px)
+	{
+	#av-vst .page-main-title {height: 110px}
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ footer ------------------------------ */
+/* -------------------------------------------------------------------- */
+#av-vst footer
+	{
+	background: #4C5255;
+	color: #E0E0E0;
+	font-size: 75%;
+	letter-spacing: 1px;
+	padding: 26px 0 10px 0;
+	}
+
+#av-vst footer input                            {color: #4C5255}
+#av-vst footer input::-webkit-input-placeholder {color: #4C5255;letter-spacing: 1px}
+#av-vst footer input::-moz-placeholder          {color: #4C5255;letter-spacing: 1px}
+#av-vst footer input:-ms-input-placeholder      {color: #4C5255;letter-spacing: 1px}
+
+#av-vst footer .contacts-cell > b a {color: #FAFAFA;display: block;font-size: 116.7%;margin-bottom: 16px}
+#av-vst footer .contacts-cell >   a {color: #E0E0E0}
+#av-vst footer .socservs-cell       {align-items: center;display: flex;padding: 26px 0}
+#av-vst footer .copyright-cell      {border-top: 1px solid #757575;padding-top: 12px;text-align: center}
+
+@media (min-width: 992px)
+	{
+	#av-vst footer .contacts-cell {padding-left: 26px}
+	#av-vst footer .socservs-cell {border-top: 1px solid #757575;justify-content: space-between;margin-top: 26px}
+	}
+@media (min-width: 768px) and (max-width: 991px)
+	{
+	#av-vst footer .contacts-cell {padding-right: 26px;text-align: right}
+	#av-vst footer .subscibe-cell {padding-left : 26px;width: 250px}
+	#av-vst footer .socservs-cell {justify-content: center}
+	}
+@media (max-width: 767px)
+	{
+	#av-vst footer .contacts-cell,
+	#av-vst footer .subscibe-cell {text-align: center}
+	#av-vst footer .subscibe-cell {margin: 26px calc((100% - 200px)/2);width: 200px}
+	#av-vst footer .socservs-cell {justify-content: center;padding-top: 0}
+	}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- up arrow ----------------------------- */
+/* -------------------------------------------------------------------- */
+ #av-vst-up-button
+	{
+	background: url(up_button.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	bottom: 3%;
+	left:   3%;
+	width:  48px;
+	height: 48px;
+	z-index: 9999;
+	}

@@ -1,0 +1,26 @@
+.av-form-elements-av_site-button
+	{
+	background: #CC0000;
+	border: 1px solid #CC0000;
+	border-radius: 2px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	outline: none;
+	padding: 7px 10px;
+	margin: 0;
+	transition: .3s;
+	text-align: center;
+	text-decoration: none;
+	}
+.av-form-elements-av_site-button:visited {color: #FFF;text-decoration: none}
+.av-form-elements-av_site-button:hover,
+.av-form-elements-av_site-button:focus,
+.av-form-elements-av_site-button:active
+	{
+	background: #FFF;
+	box-shadow: 0 2px 4px rgba(76,82,85,0.25);
+	color: #CC0000;
+	text-decoration: none;
+	}

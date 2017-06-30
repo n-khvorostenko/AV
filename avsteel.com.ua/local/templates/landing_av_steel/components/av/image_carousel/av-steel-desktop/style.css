@@ -1,0 +1,20 @@
+.av-vs-cat-st-element-view-photo .small-img,
+.av-vs-cat-st-element-view-photo .big-img,
+.center-slider-title {text-align: center}
+.slick-slide h3 {font-size: 25px;font-weight: bold;}
+.slick-slide table {display: table;width: 90%;border-spacing: 1px;border-collapse: collapse;}
+
+table,td,tr,tbody {margin: 0px; padding: 0px;}
+#av-blur-screen {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.small-img h3 {width: 90%;}
+
+.slick-slide > [red-btn] {
+    margin-right: 40px;
+}

@@ -1,0 +1,15 @@
+/* ------------------------------------------------------------------- */
+/* ------------------------------ шрифт ------------------------------ */
+/* ------------------------------------------------------------------- */
+
+@font-face { 
+font-family: 'Myriad Pro';       /* название одно */ 
+
+src: url(/upload/av_site/landings/av-steel/MyriadPro-Regular.eot?#iefix) format('embedded-opentype');	
+src: url(/upload/av_site/landings/av-steel/MyriadPro-Regular.ttf);
+src: url(/upload/av_site/landings/av-steel/MyriadPro-Regular.woff) format('woff');
+src: url(/upload/av_site/landings/av-steel/MyriadPro-Regular.otf) format("opentype");
+font-weight: 400;              /* разная плотность */ 
+font-style: normal; 
+} 
+body {font-family: "Myriad Pro", "Arial" !important;  }

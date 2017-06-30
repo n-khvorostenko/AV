@@ -1,0 +1,136 @@
+/* -------------------------------------------------------------------- */
+/* ----------------------------- preloader ---------------------------- */
+/* -------------------------------------------------------------------- */
+#av-waiting-screen
+	{
+	position: fixed;
+	top:    0;
+	left:   0;
+	right:  0;
+	bottom: 0;
+	z-index: 3000;
+	}
+#av-waiting-screen > div
+	{
+	animation:         spin 2s linear infinite;
+	-webkit-animation: spin 2s linear infinite;
+	border: 2px solid transparent;
+	border-top-color: #335261;
+	border-radius: 50%;
+	margin: -40px 0 0 -40px;
+	position: relative;
+	left: 50%;
+	top:  50%;
+	width:  80px;
+	height: 80px;
+	}
+#av-waiting-screen > div::before
+	{
+	animation:         spin 3s linear infinite;
+	-webkit-animation: spin 3s linear infinite;
+	border: 2px solid transparent;
+	border-top-color: #CC0000;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top:    5px;
+	left:   5px;
+	right:  5px;
+	bottom: 5px;
+	}
+#av-waiting-screen > div::after
+	{
+	animation:         spin 1.5s linear infinite;
+	-webkit-animation: spin 1.5s linear infinite;
+	border: 2px solid transparent;
+	border-top-color: #8BA2AF;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top:    15px;
+	left:   15px;
+	right:  15px;
+	bottom: 15px;
+	}
+
+@-webkit-keyframes spin
+	{
+	0%
+		{
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
+		}
+	100%
+		{
+		-webkit-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		        transform: rotate(360deg);
+		}
+	}
+@keyframes spin
+	{
+	0%
+		{
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
+		}
+	100%
+		{
+		-webkit-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+ 		        transform: rotate(360deg);
+		}
+	}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- blur screen --------------------------- */
+/* -------------------------------------------------------------------- */
+#av-blur-screen
+	{
+	background: #000;
+	opacity: 0;
+	position: fixed;
+	top:    0;
+	left:   0;
+	right:  0;
+	bottom: 0;
+	}
+/* ------------------------------------------------------------------- */
+/* --------------------------- alert popup --------------------------- */
+/* ------------------------------------------------------------------- */
+.av-alert-popup
+	{
+	background: #FFF;
+	box-shadow: 0 4px 8px rgba(76,82,85,0.25);
+	font-size: 114.3%;
+	padding: 30px;
+	max-width: 500px;
+	}
+
+.av-alert-popup                .content {align-items: center;display: flex}
+.av-alert-popup:not([type=""]) .image
+	{
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 20px;
+	width:  64px;
+	height: 64px;
+	}
+.av-alert-popup[type=ok]       .image   {background-image: url(/bitrix/images/av_site/alert_popup_ok.png)}
+.av-alert-popup[type=alert]    .image   {background-image: url(/bitrix/images/av_site/alert_popup_alert.png)}
+.av-alert-popup:not([type=""]) .text    {width: calc(100% - 84px)}
+.av-alert-popup                .close-form-button
+	{
+	background: url(/bitrix/images/av_site/alert_popup_close.png) center center no-repeat;
+	background-size: 16px;
+	cursor: pointer;
+	opacity: 0.4;
+	position: absolute;
+	right: 0;
+	top:   0;
+	transition: linear .5s;
+	width:  30px;
+	height: 30px;
+	}
+.av-alert-popup .close-form-button:hover {opacity: 1;transition: linear .5s}

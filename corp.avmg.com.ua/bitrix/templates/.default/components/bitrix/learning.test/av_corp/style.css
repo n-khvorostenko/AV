@@ -1,0 +1,114 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail-result .result-table,
+.av-learning-test-detail-result .result-table td,
+.av-learning-test-detail-result .result-table th
+	{
+	border: none;
+	font-weight: normal;
+	padding: 0;
+	margin:  0;
+	}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail                  {display: flex;justify-content: space-between}
+.av-learning-test-detail > *:nth-child(1) {width: calc(100% - 190px)}
+.av-learning-test-detail > *:nth-child(2) {width: 130px}
+/* -------------------------------------------------------------------- */
+/* --------------------------- answer block --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail > *:nth-child(1) .question              {margin-bottom: 25px}
+.av-learning-test-detail > *:nth-child(1) .question .title       {font-weight: bold;margin-bottom: 15px}
+.av-learning-test-detail > *:nth-child(1) .question .description {text-align: justify;text-indent: 15px}
+.av-learning-test-detail > *:nth-child(1) .question img          {margin: 15px 10% 0 10%;width: 80%}
+
+.av-learning-test-detail > *:nth-child(1) .answer > *:not(:last-child)                  {margin-bottom: 10px}
+.av-learning-test-detail > *:nth-child(1) .answer .sorting-variant-row                  {align-items: center;display: flex;justify-content: space-between}
+.av-learning-test-detail > *:nth-child(1) .answer .sorting-variant-row > *:nth-child(1) {width: 25px}
+.av-learning-test-detail > *:nth-child(1) .answer .sorting-variant-row > *:nth-child(2) {width: calc(100% - 25px)}
+
+.av-learning-test-detail > *:nth-child(1) .buttons-block {margin-top: 25px}
+/* -------------------------------------------------------------------- */
+/* -------------------------- questions block ------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail > *:nth-child(2) .title {font-weight: bold;margin-bottom: 5px;text-align: right}
+.av-learning-test-detail > *:nth-child(2) .bar   {display: flex;flex-wrap: wrap;margin: 0 -5px -5px 0}
+.av-learning-test-detail > *:nth-child(2) .bar > *
+	{
+	align-items: center;
+	border: 1px solid #B7C0C9;
+	border-radius: 2px;
+	color: inherit;
+	display: flex;
+	justify-content: center;
+	margin: 0 5px 5px 0;
+	width:  calc((100%  - 5px*5)/5 - 2px);
+	height: calc((130px - 5px*5)/5 - 2px);
+	}
+.av-learning-test-detail > *:nth-child(2) .bar > *.answered {background: #DCE1E4}
+.av-learning-test-detail > *:nth-child(2) .bar > *.current  {background: #CC0000;border-color: #CC0000;color: #FFF}
+.av-learning-test-detail > *:nth-child(2) .timer
+	{
+	display: flex;
+	font-size: 130%;
+	font-weight: bold;
+	justify-content: center;
+	margin-top: 20px;
+	}
+.av-learning-test-detail > *:nth-child(2) .timer.failed           {color: #CC0000}
+.av-learning-test-detail > *:nth-child(2) .timer > *:nth-child(2),
+.av-learning-test-detail > *:nth-child(2) .timer > *:nth-child(4) {margin: 0 3px}
+
+.av-learning-test-detail > *:nth-child(2) .current-result {margin-top: 20px;text-align: center}
+/* -------------------------------------------------------------------- */
+/* --------------------------- result block --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail-result .alert-message,
+.av-learning-test-detail-result .result-message         {font-size: 130%;text-align: center}
+.av-learning-test-detail-result .result-message         {font-weight: bold;margin-bottom: 40px}
+.av-learning-test-detail-result .result-message.failed  {color: #CC0000}
+.av-learning-test-detail-result .result-message.success {color: #729E00}
+
+.av-learning-test-detail-result .result-table    {margin-bottom: 20px}
+.av-learning-test-detail-result .result-table th {padding-right: 5px}
+/* -------------------------------------------------------------------- */
+/* --------------------------- restart block -------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-restart > h3                   {margin: 0 0 20px 0}
+.av-learning-test-restart > .important           {font-weight: bold}
+.av-learning-test-restart > .important a,
+.av-learning-test-restart > .important a:visited {color: #CC0000;text-decoration: none}
+.av-learning-test-restart > .important a:hover,
+.av-learning-test-restart > .important a:active,
+.av-learning-test-restart > .important a:focus   {color: #CC0000;text-decoration: underline}
+.av-learning-test-restart > form                 {margin-top: 15px}
+.av-learning-test-restart > form > [name=next]   {width: 200px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- popup ------------------------------ */
+/* -------------------------------------------------------------------- */
+.av-learning-test-detail-popup-content {display: none}
+.av-learning-test-detail-popup
+	{
+	font-family: "OpenSans-Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #535C69;
+	text-align: center;
+	}
+.av-learning-test-detail-popup .popup-content                      {font-weight: bold;text-transform: uppercase}
+.av-learning-test-detail-popup .popup-buttons                      {margin-top: 20px;white-space: nowrap}
+.av-learning-test-detail-popup .popup-buttons > *                  {display: inline-block;width: 120px}
+.av-learning-test-detail-popup .popup-buttons > *:not(:last-child) {margin-right: 10px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- media ------------------------------ */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px)
+	{
+	.av-learning-test-detail > *:nth-child(1) .buttons-block > *:not(:nth-child(3)) {margin-right: 30px;width: 125px}
+	}
+@media (max-width: 1199px)
+	{
+	.av-learning-test-detail > *:nth-child(1) .buttons-block > *:not(:nth-child(3)) {width: calc((100% - 20px)/3)}
+	.av-learning-test-detail > *:nth-child(1) .buttons-block > *:not(:last-child)   {margin-right: 10px}
+	}

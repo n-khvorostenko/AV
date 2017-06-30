@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-iblock-element-search input,
+.av-form-elements-iblock-element-search ul
+	{
+	border:  none;
+	margin:  0;
+	padding: 0;
+	}
+.av-form-elements-iblock-element-search li:before,
+.av-form-elements-iblock-element-search > input {display: none !important}
+/* -------------------------------------------------------------------- */
+/* --------------------------- search input --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-iblock-element-search .input-label
+	{
+    align-items: center;
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 6px 12px 10px;
+	}
+.av-form-elements-iblock-element-search .input-label.active         {border-color: #868B8D}
+.av-form-elements-iblock-element-search .input-label > input        {display: none;width: 100%}
+.av-form-elements-iblock-element-search .input-label   .placeholder {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%}
+.av-form-elements-iblock-element-search .input-label   .icon
+	{
+	background: url(images/search_icon.png) center center no-repeat;
+	background-size: 18px;
+	width:  24px;
+	height: 24px;
+	}
+/* -------------------------------------------------------------------- */
+/* --------------------------- search result -------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-elements-iblock-element-search > ul
+	{
+	background: #FAFAFA;
+	display: none;
+	margin-top: -2px;
+	}
+.av-form-elements-iblock-element-search > ul li
+	{
+	border-left:  1px solid #868B8D;
+	border-right: 1px solid #868B8D;
+	cursor: pointer;
+	padding: 12px 10px;
+	}
+.av-form-elements-iblock-element-search > ul li:last-child
+	{
+	border-bottom: 1px solid #868B8D;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius:  2px;
+	}
+.av-form-elements-iblock-element-search > ul li:hover,
+.av-form-elements-iblock-element-search > ul li:active,
+.av-form-elements-iblock-element-search > ul li:focus,
+.av-form-elements-iblock-element-search > ul li.selected
+	{
+	background:   #4C5255;
+	border-color: #4C5255;
+	color: #FFF;
+	}

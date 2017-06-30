@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------- page ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-self                                   {display: flex;justify-content: space-between}
+.av-learning-test-self .question-block                   {width: calc(100% - 190px)}
+.av-learning-test-self .question-block:not(:first-child) {display: none}
+.av-learning-test-self .questions-bar                    {width: 130px}
+/* -------------------------------------------------------------------- */
+/* --------------------------- answer block --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-self .question-block .question              {margin-bottom: 25px}
+.av-learning-test-self .question-block .question .title       {font-weight: bold;margin-bottom: 15px}
+.av-learning-test-self .question-block .question .description {text-align: justify;text-indent: 15px}
+.av-learning-test-self .question-block .question img          {margin: 15px 10% 0 10%;width: 80%}
+
+.av-learning-test-self .question-block   .answer-variant                  {align-items: center;display: flex}
+.av-learning-test-self .question-block   .answer-variant:not(:last-child) {margin-bottom: 10px}
+.av-learning-test-self .question-block.R .answer-variant > *:nth-child(1) {width: 25px}
+.av-learning-test-self .question-block.R .answer-variant > *:nth-child(2) {width: calc(100% - 25px)}
+
+.av-learning-test-self .question-block.answered .answer-variant::before
+	{
+	background: center center no-repeat;
+	content: '';
+	display: block;
+	margin-right: 10px;
+	width:  18px;
+	height: 18px;
+	}
+.av-learning-test-self .question-block.answered .answer-variant.correct::before   {background-image: url(images/correct.svg)}
+.av-learning-test-self .question-block.answered .answer-variant.incorrect::before {background-image: url(images/incorrect.svg)}
+
+.av-learning-test-self .question-block .buttons-block     {display: none;margin-top: 25px}
+.av-learning-test-self .question-block .buttons-block > * {width: 125px}
+/* -------------------------------------------------------------------- */
+/* -------------------------- questions block ------------------------- */
+/* -------------------------------------------------------------------- */
+.av-learning-test-self .questions-bar .title {font-weight: bold;margin-bottom: 5px;text-align: right}
+.av-learning-test-self .questions-bar .bar   {display: flex;flex-wrap: wrap;margin: 0 -5px -5px 0}
+.av-learning-test-self .questions-bar .bar > *
+	{
+	align-items: center;
+	border: 1px solid #B7C0C9;
+	border-radius: 2px;
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin: 0 5px 5px 0;
+	width:  calc((100%  - 5px*5)/5 - 2px);
+	height: calc((130px - 5px*5)/5 - 2px);
+	}
+.av-learning-test-self .questions-bar .bar > *.current {background: #CC0000;border-color: #CC0000;color: #FFF}

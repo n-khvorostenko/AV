@@ -1,0 +1,21 @@
+.av-404-page                   {margin: 0 26px;text-align: center}
+.av-404-page > b               {color: #CC0000;display: block;font-weight: bold}
+.av-404-page > i               {display: block;font-style: normal;margin-bottom: 52px}
+.av-404-page .buttons-cell > * {width: 200px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-404-page > b                           {font-size: 86px;line-height: 86px}
+	.av-404-page > i                           {font-size: 36px;line-height: 36px}
+	.av-404-page .buttons-cell                 {margin-top: 104px}
+	.av-404-page .buttons-cell > *:first-child {margin-right: 10px}
+	}
+@media (max-width: 767px)
+	{
+	.av-404-page > b                           {font-size: 79px;line-height: 79px}
+	.av-404-page > i                           {font-size: 33px;line-height: 33px}
+	.av-404-page .buttons-cell                 {margin-top: 52px}
+	.av-404-page .buttons-cell > *:first-child {display: block;margin: 0 auto 10px auto}
+	}

@@ -1,0 +1,47 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.av-bases-list a,
+.av-bases-list a:hover,
+.av-bases-list a:focus,
+.av-bases-list a:active,
+.av-bases-list a:visited {color: inherit;text-decoration: none}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ items ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-bases-list-element
+	{
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 200px;
+	justify-content: space-between;
+	padding: 10px;
+	transition: .3s;
+	}
+.av-bases-list-element:hover            {box-shadow: 0 4px 8px rgba(76,82,85,0.25)}
+.av-bases-list-element:not(:last-child) {margin-bottom: 6px}
+.av-bases-list-element.closed           {opacity: 0.5}
+
+.av-bases-list-element .value-block                        {padding-left:   13px}
+.av-bases-list-element .value-block > div:not(:last-child) {padding-bottom: 13px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ other ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-bases-list              {margin: -10px}
+.av-bases-list-pager.top    {margin-bottom: 52px}
+.av-bases-list-pager.bottom {margin-top:    52px}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (min-width: 768px)
+	{
+	.av-bases-list-element:not(.no-map) > div:first-child {width: calc(100% - 226px)}
+	.av-bases-list-element.no-map       > div:first-child {width: 100%}
+	.av-bases-list-element .google-map                    {width: 200px;height: 200px}
+	}
+@media (max-width: 767px)
+	{
+	.av-bases-list-element > div:first-child {width: 100%}
+	.av-bases-list-element .google-map       {margin-top: 26px;width: 100%;height: 200px}
+	}
