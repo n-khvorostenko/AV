@@ -1,8 +1,13 @@
 <?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-IncludeTemplateLangFile(__FILE__);
 if($APPLICATION->GetCurPage(false) != '/auth/') LocalRedirect('/auth/');
+IncludeTemplateLangFile(__FILE__);
+
+$errors                = [];
 $registrationAvailable = COption::GetOptionString("main", "new_user_registration") == 'Y' ? true : false;
+
+if(isset($APPLICATION->arAuthResult) && $APPLICATION->arAuthResult !== true)
+	$errors[] = $APPLICATION->arAuthResult["MESSAGE"];
 ?>
 <!DOCTYPE html>
 <html lang="<?=LANGUAGE_ID?>">
@@ -31,10 +36,20 @@ $registrationAvailable = COption::GetOptionString("main", "new_user_registration
 		<div class="main-window">
 			<?
 			/* ------------------------------------------- */
+			/* ---------------- top block ---------------- */
+			/* ------------------------------------------- */
+			?>
+			<?if(count($errors)):?>
+			<div class="top-block">
+				<?=implode('<br>', $errors)?>
+			</div>
+			<?endif?>
+			<?
+			/* ------------------------------------------- */
 			/* --------------- left block ---------------- */
 			/* ------------------------------------------- */
 			?>
-			<div>
+			<div class="left-block">
 				<div>
 					<img
 						class="logo"
@@ -84,7 +99,7 @@ $registrationAvailable = COption::GetOptionString("main", "new_user_registration
 			/* --------------- right block --------------- */
 			/* ------------------------------------------- */
 			?>
-			<div>
+			<div class="right-block">
 				<div class="forms-block">
 					<div class="auth">
 						<?
@@ -183,7 +198,7 @@ $registrationAvailable = COption::GetOptionString("main", "new_user_registration
 			/* --------------- bottom block -------------- */
 			/* ------------------------------------------- */
 			?>
-			<div>
+			<div class="bottom-block">
 				<div class="forgot-pass-link" data-call-form="forgotpass">
 					<?=GetMessage("EDU_FORGOTPASS_CALL_BUTTON")?>
 				</div>

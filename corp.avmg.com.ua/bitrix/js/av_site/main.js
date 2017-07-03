@@ -33,20 +33,60 @@ function AvBlurScreen(value, zIndex)
 		$blurScreen.fadeTo(500, 0, function() {$blurScreen.remove()});
 	}
 // alert popup
-function CreateAvAlertPopup(alertText, type)
+function CreateAvAlertPopup(alertText, type, options)
 	{
-	return $
-		(
-		'<div class="av-alert-popup" type="'+type+'">'+
-			'<div class="content">'+
-				'<div class="image"></div>'+
-				'<div class="text">'+alertText+'</div>'+
-			'</div>'+
-			'<div class="close-form-button"></div>'+
-		'</div>'
-		)
-		.appendTo('body')
-		.on("vclick", '.close-form-button', function() {$(this).closest('.av-alert-popup').remove()});
+	var
+		$popUpHider = $(),
+		$popUp      =
+			$(
+			'<div class="av-alert-popup" type="'+type+'">'+
+				'<div class="content">'+
+					'<div class="image"></div>'+
+					'<div class="text">'+alertText+'</div>'+
+				'</div>'+
+				'<div class="close-form-button"></div>'+
+			'</div>'
+			)
+			.appendTo('body')
+			.on("vclick", '.close-form-button', function() {$(this).closest('.av-alert-popup').remove()}),
+		popUpOptions =
+			{
+			"hide_on_clickout" : 'N',
+			"centering"        : 'N',
+			"z_index"          : 1000
+			};
+
+	$.extend(popUpOptions, options);
+	popUpOptions.z_index = parseInt(popUpOptions.z_index);
+
+	if(popUpOptions.centering == 'Y')
+		{
+		$popUp.positionCenter(popUpOptions.z_index);
+		$(window)
+			.scroll(function() {$popUp.positionCenter()})
+			.resize(function() {$popUp.positionCenter()});
+		}
+
+	if(popUpOptions.hide_on_clickout == 'Y')
+		{
+		$popUpHider = $('<div></div>')
+			.css
+				({
+				"position": 'fixed',
+				"top"     : '0',
+				"bottom"  : '0',
+				"left"    : '0',
+				"right"   : '0',
+				"z-index" : (popUpOptions.z_index - 1)
+				})
+			.appendTo('body');
+		setTimeout(function()
+			{
+			$popUpHider.on("vclick", function() {$(this).add($popUp).remove()});
+			}, 300);
+		}
+
+	return $popUp;
 	}
 /* ------------------------------------------------------------------- */
 /* ----------------------------- methods ----------------------------- */

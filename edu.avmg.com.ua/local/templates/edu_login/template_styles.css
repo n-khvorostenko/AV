@@ -44,10 +44,27 @@ html
 	transition: .3s;
 	max-width: 650px;
 	}
-#av-edu-login .main-window > *              {width: calc((100% - 40px)/2)}
-#av-edu-login .main-window > *:nth-child(1),
-#av-edu-login .main-window > *:nth-child(2) {display: flex;flex-direction: column;justify-content: space-between}
-#av-edu-login .main-window > *:nth-child(3) {margin-left: calc((100% - 40px)/2 + 40px);text-align: center}
+#av-edu-login .main-window .top-block
+	{
+	color: #CC0000;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+	}
+#av-edu-login .main-window .left-block,
+#av-edu-login .main-window .right-block
+	{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: calc((100% - 40px)/2);
+	}
+#av-edu-login .main-window .bottom-block
+	{
+	margin-left: calc((100% - 40px)/2 + 40px);
+	text-align: center;
+	width: calc((100% - 40px)/2);
+	}
 
 #av-edu-login .main-window .logo                             {margin: 0 0 10px calc((100% - 130px)/2);width: 130px}
 #av-edu-login .main-window .info-block                       {text-align: justify}
@@ -71,8 +88,8 @@ html
 @media (max-width: 767px)
 	{
 	#av-edu-login .main-window                                             {max-width: 250px}
-	#av-edu-login .main-window > *                                         {width: 100%}
-	#av-edu-login .main-window > *:nth-child(3)                            {margin-left: 0}
+	#av-edu-login .main-window > *                                         {width: 100% !important}
+	#av-edu-login .main-window .bottom-block                               {margin-left: 0}
 	#av-edu-login .main-window .submit-buttons-block > *                   {line-height: 30px;padding: 0;width: calc((100% - 10px)/2)}
 	#av-edu-login .main-window .submit-buttons-block > *:not(:first-child) {margin-left: 10px}
 

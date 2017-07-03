@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-input input,
+.av-form-input label
+	{
+	background: transparent;
+	border: none;
+	color: inherit;
+	font-weight: normal;
+	margin:  0;
+	padding: 0;
+	outline: none;
+	}
+.av-form-input input:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px white inset !important}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ input ------------------------------- */
+/* -------------------------------------------------------------------- */
+.av-form-input
+	{
+	border: 1px solid #B6C0C6;
+	border-radius: 2px;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+.av-form-input > *                {line-height: 34px;width: 100%}
+.av-form-input:not(.disabled),
+.av-form-input:not(.disabled) > * {cursor: text}
+
+.av-form-input:not(.alert-input):not(.disabled):hover,
+.av-form-input:not(.alert-input):not(.disabled).active {border-color: #868B8D}
+.av-form-input.alert-input                             {border-color: #CC0000}
+.av-form-input.disabled                                {background: #F5F6F7}
